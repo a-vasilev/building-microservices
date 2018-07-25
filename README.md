@@ -12,10 +12,11 @@ The intent of this guide is to create a single source of information for buildin
 
  - Independently deployable
  - Modeled around a business domain
+ - Automated in every aspect
  - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NDE1NTY2MiwtNjM4OTMwNDg1LDcyNj
-IzMjIyOCw5NDI2MDEzOTEsMTU4OTI1MDU0NiwyMDMxOTI3MjA0
-XX0=
+eyJoaXN0b3J5IjpbLTM4MDE1MDYzNSwyMDk0MTU1NjYyLC02Mz
+g5MzA0ODUsNzI2MjMyMjI4LDk0MjYwMTM5MSwxNTg5MjUwNTQ2
+LDIwMzE5MjcyMDRdfQ==
 -->
