@@ -14,14 +14,14 @@ The intent of this guide is to create a single source of information for buildin
  - [Modeled around a business domain](#modeled-around-a-business-domain)
  - [Automate every aspect](#automate-every-aspect)
  - [Hide implementation details](#hide-implementation-details)
- - Isolate failure
- - Decentralize everything
- - Monitor everything
- - Consumer first
+ - [Isolate failure](#isolate-failure)
+ - [Decentralize everything](#decentralize-everything)
+ - [Monitor everything](#monitor-everything)
+ - [Consumer first](#consumer-first)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk2ODA4NjIzLC0xNDUxMDUyNTM4LDE1OD
-A5MjkwNzcsMTI4OTY5OTM0OCwtMTE0NjY0MDc5OCwtMzgwMTUw
-NjM1LDIwOTQxNTU2NjIsLTYzODkzMDQ4NSw3MjYyMzIyMjgsOT
-QyNjAxMzkxLDE1ODkyNTA1NDYsMjAzMTkyNzIwNF19
+eyJoaXN0b3J5IjpbLTQ5NTU0MTY1OCwtMTQ1MTA1MjUzOCwxNT
+gwOTI5MDc3LDEyODk2OTkzNDgsLTExNDY2NDA3OTgsLTM4MDE1
+MDYzNSwyMDk0MTU1NjYyLC02Mzg5MzA0ODUsNzI2MjMyMjI4LD
+k0MjYwMTM5MSwxNTg5MjUwNTQ2LDIwMzE5MjcyMDRdfQ==
 -->
