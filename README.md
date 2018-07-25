@@ -19,18 +19,18 @@ The intent of this guide is to create a single source of information for buildin
 ### Principles of microservices
 
  #### Independently deployable
- - [Modeled around a business domain](#modeled-around-a-business-domain)
- - [Automate every aspect](#automate-every-aspect)
- - [Hide implementation details](#hide-implementation-details)
- - [Isolate failure](#isolate-failure)
- - [Decentralize everything](#decentralize-everything)
- - [Monitor everything](#monitor-everything)
+ #### Modeled around a business domain
+ #### Automate every aspect
+ #### Hide implementation details
+ #### Isolate failure
+ - [Decentralize everything
+ - [Monitor everything
  - [Consumer first](#consumer-first)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Njc2MjkwNzUsLTQ5NTU0MTY1OCwtMT
-Q1MTA1MjUzOCwxNTgwOTI5MDc3LDEyODk2OTkzNDgsLTExNDY2
-NDA3OTgsLTM4MDE1MDYzNSwyMDk0MTU1NjYyLC02Mzg5MzA0OD
-UsNzI2MjMyMjI4LDk0MjYwMTM5MSwxNTg5MjUwNTQ2LDIwMzE5
-MjcyMDRdfQ==
+eyJoaXN0b3J5IjpbLTM2MjA5ODU0MCwtMTU2NzYyOTA3NSwtND
+k1NTQxNjU4LC0xNDUxMDUyNTM4LDE1ODA5MjkwNzcsMTI4OTY5
+OTM0OCwtMTE0NjY0MDc5OCwtMzgwMTUwNjM1LDIwOTQxNTU2Nj
+IsLTYzODkzMDQ4NSw3MjYyMzIyMjgsOTQyNjAxMzkxLDE1ODky
+NTA1NDYsMjAzMTkyNzIwNF19
 -->
