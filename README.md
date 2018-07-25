@@ -11,9 +11,11 @@ The intent of this guide is to create a single source of information for buildin
 ### Principles of microservices
 
  - Independently deployable
+ - Modeled around a business domain
  - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzODkzMDQ4NSw3MjYyMzIyMjgsOTQyNj
-AxMzkxLDE1ODkyNTA1NDYsMjAzMTkyNzIwNF19
+eyJoaXN0b3J5IjpbMjA5NDE1NTY2MiwtNjM4OTMwNDg1LDcyNj
+IzMjIyOCw5NDI2MDEzOTEsMTU4OTI1MDU0NiwyMDMxOTI3MjA0
+XX0=
 -->
