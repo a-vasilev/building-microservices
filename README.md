@@ -6,10 +6,10 @@ The intent of this guide is to create a single source of information for buildin
  - [Principles of microservices](#principles-of-microservices)
 ### What is microservices architecture?
 
-> Blockquote
+> Collection of loosely coupled services modeled around th
 
 ### Principles of microservices
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNzk2MTAxNywxNTg5MjUwNTQ2LDIwMz
-E5MjcyMDRdfQ==
+eyJoaXN0b3J5IjpbOTQyNjAxMzkxLDE1ODkyNTA1NDYsMjAzMT
+kyNzIwNF19
 -->
