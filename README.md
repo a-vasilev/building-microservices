@@ -16,9 +16,10 @@ The intent of this guide is to create a single source of information for buildin
  - Hide implementation details
  - Isolate failure
  - Decentralize everything
+ - Monitor everything
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDY2NDA3OTgsLTM4MDE1MDYzNSwyMD
-k0MTU1NjYyLC02Mzg5MzA0ODUsNzI2MjMyMjI4LDk0MjYwMTM5
-MSwxNTg5MjUwNTQ2LDIwMzE5MjcyMDRdfQ==
+eyJoaXN0b3J5IjpbMTI4OTY5OTM0OCwtMTE0NjY0MDc5OCwtMz
+gwMTUwNjM1LDIwOTQxNTU2NjIsLTYzODkzMDQ4NSw3MjYyMzIy
+MjgsOTQyNjAxMzkxLDE1ODkyNTA1NDYsMjAzMTkyNzIwNF19
 -->
