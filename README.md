@@ -6,10 +6,10 @@ The intent of this guide is to create a single source of information for buildin
  - [Principles of microservices](#principles-of-microservices)
 ### What is microservices architecture?
 
-> Collection of loosely coupled services modeled around th
+> Collection of loosely coupled services modeled around a business domain.
 
 ### Principles of microservices
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQyNjAxMzkxLDE1ODkyNTA1NDYsMjAzMT
-kyNzIwNF19
+eyJoaXN0b3J5IjpbNzI2MjMyMjI4LDk0MjYwMTM5MSwxNTg5Mj
+UwNTQ2LDIwMzE5MjcyMDRdfQ==
 -->
