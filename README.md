@@ -23,14 +23,14 @@ The intent of this guide is to create a single source of information for buildin
  #### Automate every aspect
  #### Hide implementation details
  #### Isolate failure
- - [Decentralize everything
- - [Monitor everything
- - [Consumer first](#consumer-first)
+ #### Decentralize everything
+ #### Monitor everything
+ #### Consumer first
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MjA5ODU0MCwtMTU2NzYyOTA3NSwtND
-k1NTQxNjU4LC0xNDUxMDUyNTM4LDE1ODA5MjkwNzcsMTI4OTY5
-OTM0OCwtMTE0NjY0MDc5OCwtMzgwMTUwNjM1LDIwOTQxNTU2Nj
-IsLTYzODkzMDQ4NSw3MjYyMzIyMjgsOTQyNjAxMzkxLDE1ODky
-NTA1NDYsMjAzMTkyNzIwNF19
+eyJoaXN0b3J5IjpbNDUzMjgxMzMyLC0xNTY3NjI5MDc1LC00OT
+U1NDE2NTgsLTE0NTEwNTI1MzgsMTU4MDkyOTA3NywxMjg5Njk5
+MzQ4LC0xMTQ2NjQwNzk4LC0zODAxNTA2MzUsMjA5NDE1NTY2Mi
+wtNjM4OTMwNDg1LDcyNjIzMjIyOCw5NDI2MDEzOTEsMTU4OTI1
+MDU0NiwyMDMxOTI3MjA0XX0=
 -->
