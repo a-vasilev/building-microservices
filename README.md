@@ -1,7 +1,9 @@
-## Microservices
+## Guide to Microservices
+### Introduction
+The intent of this guide is to create a single source of information for 
 ### Contents
- - Principles for building 
+ - Principles for building microservices
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2ODA0MjE3NF19
+eyJoaXN0b3J5IjpbMjMwNjI4NTddfQ==
 -->
