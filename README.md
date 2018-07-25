@@ -17,9 +17,11 @@ The intent of this guide is to create a single source of information for buildin
  - Isolate failure
  - Decentralize everything
  - Monitor everything
+ - Consumer first
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4OTY5OTM0OCwtMTE0NjY0MDc5OCwtMz
-gwMTUwNjM1LDIwOTQxNTU2NjIsLTYzODkzMDQ4NSw3MjYyMzIy
-MjgsOTQyNjAxMzkxLDE1ODkyNTA1NDYsMjAzMTkyNzIwNF19
+eyJoaXN0b3J5IjpbMTU4MDkyOTA3NywxMjg5Njk5MzQ4LC0xMT
+Q2NjQwNzk4LC0zODAxNTA2MzUsMjA5NDE1NTY2MiwtNjM4OTMw
+NDg1LDcyNjIzMjIyOCw5NDI2MDEzOTEsMTU4OTI1MDU0NiwyMD
+MxOTI3MjA0XX0=
 -->
