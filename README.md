@@ -19,6 +19,7 @@ The intent of this guide is to create a single source of information for buildin
 ### Principles of microservices
 
  #### Independently deployable
+ 
  #### Modeled around a business domain
  #### Automate every aspect
  #### Hide implementation details
@@ -28,9 +29,9 @@ The intent of this guide is to create a single source of information for buildin
  #### Consumer first
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUzMjgxMzMyLC0xNTY3NjI5MDc1LC00OT
-U1NDE2NTgsLTE0NTEwNTI1MzgsMTU4MDkyOTA3NywxMjg5Njk5
-MzQ4LC0xMTQ2NjQwNzk4LC0zODAxNTA2MzUsMjA5NDE1NTY2Mi
-wtNjM4OTMwNDg1LDcyNjIzMjIyOCw5NDI2MDEzOTEsMTU4OTI1
-MDU0NiwyMDMxOTI3MjA0XX0=
+eyJoaXN0b3J5IjpbLTE3NDA2NDkyNiw0NTMyODEzMzIsLTE1Nj
+c2MjkwNzUsLTQ5NTU0MTY1OCwtMTQ1MTA1MjUzOCwxNTgwOTI5
+MDc3LDEyODk2OTkzNDgsLTExNDY2NDA3OTgsLTM4MDE1MDYzNS
+wyMDk0MTU1NjYyLC02Mzg5MzA0ODUsNzI2MjMyMjI4LDk0MjYw
+MTM5MSwxNTg5MjUwNTQ2LDIwMzE5MjcyMDRdfQ==
 -->
