@@ -12,12 +12,13 @@ The intent of this guide is to create a single source of information for buildin
 
  - Independently deployable
  - Modeled around a business domain
- - Automated in every aspect
- - Encapsulate implementation details
- - 
+ - Automate every aspect
+ - Hide implementation details
+ - Isolate failure
+ - Decentralize everything
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTgzNDc5MzksLTM4MDE1MDYzNSwyMD
+eyJoaXN0b3J5IjpbLTExNDY2NDA3OTgsLTM4MDE1MDYzNSwyMD
 k0MTU1NjYyLC02Mzg5MzA0ODUsNzI2MjMyMjI4LDk0MjYwMTM5
 MSwxNTg5MjUwNTQ2LDIwMzE5MjcyMDRdfQ==
 -->
