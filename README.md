@@ -5,7 +5,11 @@ The intent of this guide is to create a single source of information for buildin
  - [What is microservices architecture?](#what-is-microservices-architecture)
  - [Principles of microservices](#principles-of-microservices)
 ### What is microservices architecture?
+
+> Blockquote
+
 ### Principles of microservices
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4OTI1MDU0NiwyMDMxOTI3MjA0XX0=
+eyJoaXN0b3J5IjpbMTkzNzk2MTAxNywxNTg5MjUwNTQ2LDIwMz
+E5MjcyMDRdfQ==
 -->
