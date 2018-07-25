@@ -19,7 +19,7 @@ The intent of this guide is to create a single source of information for buildin
 ### Principles of microservices
 
  #### Independently deployable
- Every microservice should be self contained and redeploying it should not   depend on any other microservice. 
+ Every microservice should be self contained and redeploying it should not    depend on any other microservice. 
  #### Modeled around a business domain
  #### Automate every aspect
  #### Hide implementation details
@@ -29,9 +29,9 @@ The intent of this guide is to create a single source of information for buildin
  #### Consumer first
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNDQ1NzM0Myw0NTMyODEzMzIsLTE1Nj
-c2MjkwNzUsLTQ5NTU0MTY1OCwtMTQ1MTA1MjUzOCwxNTgwOTI5
-MDc3LDEyODk2OTkzNDgsLTExNDY2NDA3OTgsLTM4MDE1MDYzNS
-wyMDk0MTU1NjYyLC02Mzg5MzA0ODUsNzI2MjMyMjI4LDk0MjYw
-MTM5MSwxNTg5MjUwNTQ2LDIwMzE5MjcyMDRdfQ==
+eyJoaXN0b3J5IjpbODQzNTI0MzQ3LDQ1MzI4MTMzMiwtMTU2Nz
+YyOTA3NSwtNDk1NTQxNjU4LC0xNDUxMDUyNTM4LDE1ODA5Mjkw
+NzcsMTI4OTY5OTM0OCwtMTE0NjY0MDc5OCwtMzgwMTUwNjM1LD
+IwOTQxNTU2NjIsLTYzODkzMDQ4NSw3MjYyMzIyMjgsOTQyNjAx
+MzkxLDE1ODkyNTA1NDYsMjAzMTkyNzIwNF19
 -->
