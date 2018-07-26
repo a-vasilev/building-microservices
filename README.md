@@ -47,8 +47,11 @@ Microservices architecture enables continuous delivery of large complex systems.
  ### Isolate failure
  With microservices comes network communication, which makes the whole system a lot easier to break than a monolith. The reliable in-process calls are changed with network calls to an outside service, which you can't guarantee will be there. 
  Every service should be fault tolerant and should be able to run (even at   diminished functionality) whenever another service that it connects to is down.
+ When 
  
  - [Hystrix](https://github.com/Netflix/hystrix) - library designed to isolate points of access to remote systems.
+ - Bulkheading
+ - Timeouts - make a lot more aggressive timeouts.
 
  ### Decentralize everything
  The ideology here is to use dumb pipes and infrastructure and contain the logic only in the microservices. Message brokers shouldn't be aware of the domain, they need to be kept as simple as possible. 
@@ -61,11 +64,11 @@ Microservices architecture enables continuous delivery of large complex systems.
  - Swagger
  - Wikis with additional information or even stats.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTY0MDgyODYsMTUxNTQ1NDk0Myw0Nj
-M2Nzg0MDgsLTIwODI5NDMzOTgsMTc5MDY5NjQyMSwtMTY1NjEw
-MzY1MCwxMTQxMDA1ODA2LDUxMDI1MTQ2OCwxOTE0ODAxNDE4LD
-EzNDg4MDAyMjksLTE1MDg1OTkzMzIsNDIyMTAyNzY3LDg2MzUy
-MDUxOCwtNjM2NjE5MTgzLDg0MzUyNDM0Nyw0NTMyODEzMzIsLT
-E1Njc2MjkwNzUsLTQ5NTU0MTY1OCwtMTQ1MTA1MjUzOCwxNTgw
-OTI5MDc3XX0=
+eyJoaXN0b3J5IjpbLTE2NjI0ODA0NzYsLTE4MTY0MDgyODYsMT
+UxNTQ1NDk0Myw0NjM2Nzg0MDgsLTIwODI5NDMzOTgsMTc5MDY5
+NjQyMSwtMTY1NjEwMzY1MCwxMTQxMDA1ODA2LDUxMDI1MTQ2OC
+wxOTE0ODAxNDE4LDEzNDg4MDAyMjksLTE1MDg1OTkzMzIsNDIy
+MTAyNzY3LDg2MzUyMDUxOCwtNjM2NjE5MTgzLDg0MzUyNDM0Ny
+w0NTMyODEzMzIsLTE1Njc2MjkwNzUsLTQ5NTU0MTY1OCwtMTQ1
+MTA1MjUzOF19
 -->
