@@ -35,14 +35,15 @@ The intent of this guide is to create a single source of information for buildin
  - Hide the databases. Every microservice should have its own database. This allows for deploying services independently. If two services read from the same schema updating the schema due to changes needed in service A would mean that service B would be impacted as well.
  ### Isolate failure
  ### Decentralize everything
+
  ### Monitor everything
  ### Consumer first
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNjYxOTE4Myw4NDM1MjQzNDcsNDUzMj
-gxMzMyLC0xNTY3NjI5MDc1LC00OTU1NDE2NTgsLTE0NTEwNTI1
-MzgsMTU4MDkyOTA3NywxMjg5Njk5MzQ4LC0xMTQ2NjQwNzk4LC
-0zODAxNTA2MzUsMjA5NDE1NTY2MiwtNjM4OTMwNDg1LDcyNjIz
-MjIyOCw5NDI2MDEzOTEsMTU4OTI1MDU0NiwyMDMxOTI3MjA0XX
-0=
+eyJoaXN0b3J5IjpbMTgxOTI0MTU5OSwtNjM2NjE5MTgzLDg0Mz
+UyNDM0Nyw0NTMyODEzMzIsLTE1Njc2MjkwNzUsLTQ5NTU0MTY1
+OCwtMTQ1MTA1MjUzOCwxNTgwOTI5MDc3LDEyODk2OTkzNDgsLT
+ExNDY2NDA3OTgsLTM4MDE1MDYzNSwyMDk0MTU1NjYyLC02Mzg5
+MzA0ODUsNzI2MjMyMjI4LDk0MjYwMTM5MSwxNTg5MjUwNTQ2LD
+IwMzE5MjcyMDRdfQ==
 -->
