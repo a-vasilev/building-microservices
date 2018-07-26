@@ -46,14 +46,14 @@ The intent of this guide is to create a single source of information for buildin
 
  ### Consumer first
 
- - **Contract Testing** - Consumers of services create tests that indicate, which services 
+ - **Contract Testing** - Consumers of services create tests that indicate, which parts of the services
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0ODgwMDIyOSwtMTUwODU5OTMzMiw0Mj
-IxMDI3NjcsODYzNTIwNTE4LC02MzY2MTkxODMsODQzNTI0MzQ3
-LDQ1MzI4MTMzMiwtMTU2NzYyOTA3NSwtNDk1NTQxNjU4LC0xND
-UxMDUyNTM4LDE1ODA5MjkwNzcsMTI4OTY5OTM0OCwtMTE0NjY0
-MDc5OCwtMzgwMTUwNjM1LDIwOTQxNTU2NjIsLTYzODkzMDQ4NS
-w3MjYyMzIyMjgsOTQyNjAxMzkxLDE1ODkyNTA1NDYsMjAzMTky
-NzIwNF19
+eyJoaXN0b3J5IjpbMjA3ODM1NzQ1NywxMzQ4ODAwMjI5LC0xNT
+A4NTk5MzMyLDQyMjEwMjc2Nyw4NjM1MjA1MTgsLTYzNjYxOTE4
+Myw4NDM1MjQzNDcsNDUzMjgxMzMyLC0xNTY3NjI5MDc1LC00OT
+U1NDE2NTgsLTE0NTEwNTI1MzgsMTU4MDkyOTA3NywxMjg5Njk5
+MzQ4LC0xMTQ2NjQwNzk4LC0zODAxNTA2MzUsMjA5NDE1NTY2Mi
+wtNjM4OTMwNDg1LDcyNjIzMjIyOCw5NDI2MDEzOTEsMTU4OTI1
+MDU0Nl19
 -->
