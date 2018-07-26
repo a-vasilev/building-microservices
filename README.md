@@ -29,14 +29,16 @@ The intent of this guide is to create a single source of information for buildin
  - Continuous Delivery
 
  ### Hide implementation details
- The only communication in a microservices system should happen through api calls between the services. This means that each service should have its own database
+ The only communication in a microservices system should happen through api calls between the services.
+
+ - Finely gri
  ### Isolate failure
  ### Decentralize everything
  ### Monitor everything
  ### Consumer first
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTE2NjI4MzQsODQzNTI0MzQ3LDQ1Mz
+eyJoaXN0b3J5IjpbLTIwNDc0MDAxMDksODQzNTI0MzQ3LDQ1Mz
 I4MTMzMiwtMTU2NzYyOTA3NSwtNDk1NTQxNjU4LC0xNDUxMDUy
 NTM4LDE1ODA5MjkwNzcsMTI4OTY5OTM0OCwtMTE0NjY0MDc5OC
 wtMzgwMTUwNjM1LDIwOTQxNTU2NjIsLTYzODkzMDQ4NSw3MjYy
