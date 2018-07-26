@@ -35,7 +35,8 @@ Microservices architecture enables continuous delivery of large complex systems.
 	 - Deploy two versions of the service itself, this is useful when there are consumers that can't be switched to the new version. This approach should be avoided as it complicates service discovery and if you have to fix a critical bug in the service you would need to fix it in two places.
 
  ### Modeled around a business domain
- Every service should be modeled around a busdomain
+ Every service should be modeled around a business domain rather than some kind of a technological grouping. This leads to every service having a more strictly defined boundaries and less changing APIs. This also means that 
+ 
  ### Automate every aspect
  This principle requires a lot of time and effort upfront without a lot of benefit at first, but once everything is in place creating, maintaining and deploying a new service becomes trivial.
  
@@ -75,11 +76,11 @@ Microservices architecture enables continuous delivery of large complex systems.
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMTI0MTMxNiwxODUxMDY2ODUwLDE5ND
-I5MTM1MzEsLTIwNDY0Nzc3MTIsLTE4MTY0MDgyODYsMTUxNTQ1
-NDk0Myw0NjM2Nzg0MDgsLTIwODI5NDMzOTgsMTc5MDY5NjQyMS
-wtMTY1NjEwMzY1MCwxMTQxMDA1ODA2LDUxMDI1MTQ2OCwxOTE0
-ODAxNDE4LDEzNDg4MDAyMjksLTE1MDg1OTkzMzIsNDIyMTAyNz
-Y3LDg2MzUyMDUxOCwtNjM2NjE5MTgzLDg0MzUyNDM0Nyw0NTMy
-ODEzMzJdfQ==
+eyJoaXN0b3J5IjpbOTE3ODExMzQ0LDE4NTEwNjY4NTAsMTk0Mj
+kxMzUzMSwtMjA0NjQ3NzcxMiwtMTgxNjQwODI4NiwxNTE1NDU0
+OTQzLDQ2MzY3ODQwOCwtMjA4Mjk0MzM5OCwxNzkwNjk2NDIxLC
+0xNjU2MTAzNjUwLDExNDEwMDU4MDYsNTEwMjUxNDY4LDE5MTQ4
+MDE0MTgsMTM0ODgwMDIyOSwtMTUwODU5OTMzMiw0MjIxMDI3Nj
+csODYzNTIwNTE4LC02MzY2MTkxODMsODQzNTI0MzQ3LDQ1MzI4
+MTMzMl19
 -->
