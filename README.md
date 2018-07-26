@@ -35,15 +35,15 @@ The intent of this guide is to create a single source of information for buildin
  - Hide the databases. Every microservice should have its own database. This allows for deploying services independently. If two services read from the same schema updating the schema due to changes needed in service A would mean that service B would be impacted as well.
  ### Isolate failure
  ### Decentralize everything
- The ideology here is to use dumb pipes and infrastructure and contain the logic only in the microservices. Message brokers shouldn't be aware of the domain, they need 
+ The ideology here is to use dumb pipes and infrastructure and contain the logic only in the microservices. Message brokers shouldn't be aware of the domain, they need to be kept as simple as possible. 
  ### Monitor everything
  ### Consumer first
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3MDM5NzEzMywtNjM2NjE5MTgzLDg0Mz
-UyNDM0Nyw0NTMyODEzMzIsLTE1Njc2MjkwNzUsLTQ5NTU0MTY1
-OCwtMTQ1MTA1MjUzOCwxNTgwOTI5MDc3LDEyODk2OTkzNDgsLT
-ExNDY2NDA3OTgsLTM4MDE1MDYzNSwyMDk0MTU1NjYyLC02Mzg5
-MzA0ODUsNzI2MjMyMjI4LDk0MjYwMTM5MSwxNTg5MjUwNTQ2LD
-IwMzE5MjcyMDRdfQ==
+eyJoaXN0b3J5IjpbODYzNTIwNTE4LC02MzY2MTkxODMsODQzNT
+I0MzQ3LDQ1MzI4MTMzMiwtMTU2NzYyOTA3NSwtNDk1NTQxNjU4
+LC0xNDUxMDUyNTM4LDE1ODA5MjkwNzcsMTI4OTY5OTM0OCwtMT
+E0NjY0MDc5OCwtMzgwMTUwNjM1LDIwOTQxNTU2NjIsLTYzODkz
+MDQ4NSw3MjYyMzIyMjgsOTQyNjAxMzkxLDE1ODkyNTA1NDYsMj
+AzMTkyNzIwNF19
 -->
