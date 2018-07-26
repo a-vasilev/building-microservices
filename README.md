@@ -15,7 +15,8 @@ The intent of this guide is to create a single source of information for buildin
 ## What are microservices?
 
 > Collection of loosely coupled services modeled around a business domain.
->
+
+It's an architecture that enables horizont
 
 ## Principles of microservices
 
@@ -50,11 +51,11 @@ The intent of this guide is to create a single source of information for buildin
  - **Contract Testing** - Consumers of services create tests that indicate, which parts of the service's API they are using. Those tests are then executed as part of the continuous integration of the service, so that it can make sure the contract is not broken. This allows for api changes to be made with certainty that nothing is broken.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzA1MDMyNTAsMTkxNDgwMTQxOCwxMz
-Q4ODAwMjI5LC0xNTA4NTk5MzMyLDQyMjEwMjc2Nyw4NjM1MjA1
-MTgsLTYzNjYxOTE4Myw4NDM1MjQzNDcsNDUzMjgxMzMyLC0xNT
-Y3NjI5MDc1LC00OTU1NDE2NTgsLTE0NTEwNTI1MzgsMTU4MDky
-OTA3NywxMjg5Njk5MzQ4LC0xMTQ2NjQwNzk4LC0zODAxNTA2Mz
-UsMjA5NDE1NTY2MiwtNjM4OTMwNDg1LDcyNjIzMjIyOCw5NDI2
-MDEzOTFdfQ==
+eyJoaXN0b3J5IjpbLTQwNDU4MTEzOSwxOTE0ODAxNDE4LDEzND
+g4MDAyMjksLTE1MDg1OTkzMzIsNDIyMTAyNzY3LDg2MzUyMDUx
+OCwtNjM2NjE5MTgzLDg0MzUyNDM0Nyw0NTMyODEzMzIsLTE1Nj
+c2MjkwNzUsLTQ5NTU0MTY1OCwtMTQ1MTA1MjUzOCwxNTgwOTI5
+MDc3LDEyODk2OTkzNDgsLTExNDY2NDA3OTgsLTM4MDE1MDYzNS
+wyMDk0MTU1NjYyLC02Mzg5MzA0ODUsNzI2MjMyMjI4LDk0MjYw
+MTM5MV19
 -->
