@@ -2,7 +2,7 @@
 ## Introduction
 The intent of this guide is to create a single source of information for building and scaling microservices systems. It will contain both theoretical information and more detailed practicle examples and technologies that can be used for solving different problems that can arise when dealing with distributed systems. 
 ### Contents
- - [What is microservices architecture?](#what-is-microservices-architecture)
+ - [What are microservices?](#what-are microservices)
  - [Principles of microservices](#principles-of-microservices)
 	 - [Independently deployable](#independently-deployable)
 	 - [Modeled around a business domain](#modeled-around-a-business-domain)
@@ -29,10 +29,10 @@ The intent of this guide is to create a single source of information for buildin
  ### Consumer first
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODU5Njc3NjYsODQzNTI0MzQ3LDQ1Mz
-I4MTMzMiwtMTU2NzYyOTA3NSwtNDk1NTQxNjU4LC0xNDUxMDUy
-NTM4LDE1ODA5MjkwNzcsMTI4OTY5OTM0OCwtMTE0NjY0MDc5OC
-wtMzgwMTUwNjM1LDIwOTQxNTU2NjIsLTYzODkzMDQ4NSw3MjYy
-MzIyMjgsOTQyNjAxMzkxLDE1ODkyNTA1NDYsMjAzMTkyNzIwNF
-19
+eyJoaXN0b3J5IjpbOTc4NzMyMjcwLDg0MzUyNDM0Nyw0NTMyOD
+EzMzIsLTE1Njc2MjkwNzUsLTQ5NTU0MTY1OCwtMTQ1MTA1MjUz
+OCwxNTgwOTI5MDc3LDEyODk2OTkzNDgsLTExNDY2NDA3OTgsLT
+M4MDE1MDYzNSwyMDk0MTU1NjYyLC02Mzg5MzA0ODUsNzI2MjMy
+MjI4LDk0MjYwMTM5MSwxNTg5MjUwNTQ2LDIwMzE5MjcyMDRdfQ
+==
 -->
