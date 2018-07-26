@@ -22,7 +22,7 @@ The intent of this guide is to create a single source of information for buildin
  Every microservice should be self contained and redeploying it should not    depend on any other microservice. 
  ### Modeled around a business domain
  ### Automate every aspect
- When it comes to microservices everything should be automated, no
+ This principle requires a lot of time and effort upfront without a lot of benefit at first, but once everything is in place creating, maintaining and deployi
  ### Hide implementation details
  ### Isolate failure
  ### Decentralize everything
@@ -30,10 +30,10 @@ The intent of this guide is to create a single source of information for buildin
  ### Consumer first
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY3NzQ3NjIwLDg0MzUyNDM0Nyw0NTMyOD
-EzMzIsLTE1Njc2MjkwNzUsLTQ5NTU0MTY1OCwtMTQ1MTA1MjUz
-OCwxNTgwOTI5MDc3LDEyODk2OTkzNDgsLTExNDY2NDA3OTgsLT
-M4MDE1MDYzNSwyMDk0MTU1NjYyLC02Mzg5MzA0ODUsNzI2MjMy
-MjI4LDk0MjYwMTM5MSwxNTg5MjUwNTQ2LDIwMzE5MjcyMDRdfQ
-==
+eyJoaXN0b3J5IjpbLTE5NDc2MTE4MDcsODQzNTI0MzQ3LDQ1Mz
+I4MTMzMiwtMTU2NzYyOTA3NSwtNDk1NTQxNjU4LC0xNDUxMDUy
+NTM4LDE1ODA5MjkwNzcsMTI4OTY5OTM0OCwtMTE0NjY0MDc5OC
+wtMzgwMTUwNjM1LDIwOTQxNTU2NjIsLTYzODkzMDQ4NSw3MjYy
+MzIyMjgsOTQyNjAxMzkxLDE1ODkyNTA1NDYsMjAzMTkyNzIwNF
+19
 -->
