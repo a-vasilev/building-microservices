@@ -41,14 +41,19 @@ The intent of this guide is to create a single source of information for buildin
  ### Decentralize everything
  The ideology here is to use dumb pipes and infrastructure and contain the logic only in the microservices. Message brokers shouldn't be aware of the domain, they need to be kept as simple as possible. 
  ### Monitor everything
- Correlation IDs
+
+ - Correlation IDs
+
  ### Consumer first
 
+ - Contract Testing - Consumers of services create tests that 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDg1OTkzMzIsNDIyMTAyNzY3LDg2Mz
-UyMDUxOCwtNjM2NjE5MTgzLDg0MzUyNDM0Nyw0NTMyODEzMzIs
-LTE1Njc2MjkwNzUsLTQ5NTU0MTY1OCwtMTQ1MTA1MjUzOCwxNT
-gwOTI5MDc3LDEyODk2OTkzNDgsLTExNDY2NDA3OTgsLTM4MDE1
-MDYzNSwyMDk0MTU1NjYyLC02Mzg5MzA0ODUsNzI2MjMyMjI4LD
-k0MjYwMTM5MSwxNTg5MjUwNTQ2LDIwMzE5MjcyMDRdfQ==
+eyJoaXN0b3J5IjpbLTIwMzYzNTUyNzEsLTE1MDg1OTkzMzIsND
+IyMTAyNzY3LDg2MzUyMDUxOCwtNjM2NjE5MTgzLDg0MzUyNDM0
+Nyw0NTMyODEzMzIsLTE1Njc2MjkwNzUsLTQ5NTU0MTY1OCwtMT
+Q1MTA1MjUzOCwxNTgwOTI5MDc3LDEyODk2OTkzNDgsLTExNDY2
+NDA3OTgsLTM4MDE1MDYzNSwyMDk0MTU1NjYyLC02Mzg5MzA0OD
+UsNzI2MjMyMjI4LDk0MjYwMTM5MSwxNTg5MjUwNTQ2LDIwMzE5
+MjcyMDRdfQ==
 -->
