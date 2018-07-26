@@ -20,7 +20,7 @@ A lot of the information is aggregated from different sources, they can be found
 
 > Collection of loosely coupled services modeled around a business domain.
 
-Microservices architecture enables continuous delivery of large complex systems. It also makes for systems that can be scaled horizontally. It enables developers to evolve the technological stack that is used and it also allows for using the correct tool for each task. All of the benefits also make it pretty complex to implement properly.
+Microservices architecture enables continuous delivery of large complex systems. It also makes for systems that can be scaled horizontally. It enables developers to evolve the technological stack that is used and it also allows for using the correct tool for each task. All of these benefits also make it very complex to implement properly.
 
 ## Principles of microservices
 
@@ -74,7 +74,7 @@ Microservices architecture enables continuous delivery of large complex systems.
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc2Mzk0NTE5LDE5NDI5MTM1MzEsLTIwND
+eyJoaXN0b3J5IjpbNjYxMzU0NzkzLDE5NDI5MTM1MzEsLTIwND
 Y0Nzc3MTIsLTE4MTY0MDgyODYsMTUxNTQ1NDk0Myw0NjM2Nzg0
 MDgsLTIwODI5NDMzOTgsMTc5MDY5NjQyMSwtMTY1NjEwMzY1MC
 wxMTQxMDA1ODA2LDUxMDI1MTQ2OCwxOTE0ODAxNDE4LDEzNDg4
