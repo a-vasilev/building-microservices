@@ -23,7 +23,7 @@ A lot of the information is aggregated from different sources, they can be found
 Microservices architecture enables continuous delivery of large complex systems. It also makes for systems that can be scaled horizontally. It enables developers to evolve the technological stack that is used and it also allows for using the correct tool for each task. All of these benefits also make it very complex to implement properly.
 
 ## Principles of microservices
-The 8 principles of microservices as 
+The 8 principles of microservices as defined by Sam Newman.
 
  ### Independently deployable
  This is the most important principle of all.
@@ -78,11 +78,11 @@ The 8 principles of microservices as
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM4MTk1OTE2LC0xNjc2MTg2NTg5LDE4NT
-EwNjY4NTAsMTk0MjkxMzUzMSwtMjA0NjQ3NzcxMiwtMTgxNjQw
-ODI4NiwxNTE1NDU0OTQzLDQ2MzY3ODQwOCwtMjA4Mjk0MzM5OC
-wxNzkwNjk2NDIxLC0xNjU2MTAzNjUwLDExNDEwMDU4MDYsNTEw
-MjUxNDY4LDE5MTQ4MDE0MTgsMTM0ODgwMDIyOSwtMTUwODU5OT
-MzMiw0MjIxMDI3NjcsODYzNTIwNTE4LC02MzY2MTkxODMsODQz
-NTI0MzQ3XX0=
+eyJoaXN0b3J5IjpbMTkzMjQyOTQ4NSwtMTY3NjE4NjU4OSwxOD
+UxMDY2ODUwLDE5NDI5MTM1MzEsLTIwNDY0Nzc3MTIsLTE4MTY0
+MDgyODYsMTUxNTQ1NDk0Myw0NjM2Nzg0MDgsLTIwODI5NDMzOT
+gsMTc5MDY5NjQyMSwtMTY1NjEwMzY1MCwxMTQxMDA1ODA2LDUx
+MDI1MTQ2OCwxOTE0ODAxNDE4LDEzNDg4MDAyMjksLTE1MDg1OT
+kzMzIsNDIyMTAyNzY3LDg2MzUyMDUxOCwtNjM2NjE5MTgzLDg0
+MzUyNDM0N119
 -->
