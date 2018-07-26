@@ -57,9 +57,10 @@ Microservices architecture enables continuous delivery of large complex systems.
  ### Decentralize everything
  The ideology here is to use dumb pipes and infrastructure and contain the logic only in the microservices. Message brokers shouldn't be aware of the domain, they need to be kept as simple as possible. 
  ### Monitor everything
+ Centralize all information needed for monitoring the system. Logging on every node and checking for errors 
  
  - Correlation IDs
- - 
+ - Aggregation of stats
  - Aggregation of all logs
 
  ### Consumer first
@@ -67,11 +68,11 @@ Microservices architecture enables continuous delivery of large complex systems.
  - Swagger
  - Wikis with additional information or even stats.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjQ3MTA3MDAsMTk0MjkxMzUzMSwtMj
-A0NjQ3NzcxMiwtMTgxNjQwODI4NiwxNTE1NDU0OTQzLDQ2MzY3
-ODQwOCwtMjA4Mjk0MzM5OCwxNzkwNjk2NDIxLC0xNjU2MTAzNj
-UwLDExNDEwMDU4MDYsNTEwMjUxNDY4LDE5MTQ4MDE0MTgsMTM0
-ODgwMDIyOSwtMTUwODU5OTMzMiw0MjIxMDI3NjcsODYzNTIwNT
-E4LC02MzY2MTkxODMsODQzNTI0MzQ3LDQ1MzI4MTMzMiwtMTU2
-NzYyOTA3NV19
+eyJoaXN0b3J5IjpbMTI5Nzc3MDU1NCwxOTQyOTEzNTMxLC0yMD
+Q2NDc3NzEyLC0xODE2NDA4Mjg2LDE1MTU0NTQ5NDMsNDYzNjc4
+NDA4LC0yMDgyOTQzMzk4LDE3OTA2OTY0MjEsLTE2NTYxMDM2NT
+AsMTE0MTAwNTgwNiw1MTAyNTE0NjgsMTkxNDgwMTQxOCwxMzQ4
+ODAwMjI5LC0xNTA4NTk5MzMyLDQyMjEwMjc2Nyw4NjM1MjA1MT
+gsLTYzNjYxOTE4Myw4NDM1MjQzNDcsNDUzMjgxMzMyLC0xNTY3
+NjI5MDc1XX0=
 -->
