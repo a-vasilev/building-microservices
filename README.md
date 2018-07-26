@@ -58,7 +58,8 @@ Microservices architecture enables continuous delivery of large complex systems.
  The ideology here is to use dumb pipes and infrastructure and contain the logic only in the microservices. Message brokers shouldn't be aware of the domain, they need to be kept as simple as possible. 
  ### Monitor everything
  
-  - Correlation IDs
+ - Correlation IDs
+ - 
  - Aggregation of all logs
 
  ### Consumer first
@@ -66,11 +67,11 @@ Microservices architecture enables continuous delivery of large complex systems.
  - Swagger
  - Wikis with additional information or even stats.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NzcwNjgxLDE5NDI5MTM1MzEsLTIwND
-Y0Nzc3MTIsLTE4MTY0MDgyODYsMTUxNTQ1NDk0Myw0NjM2Nzg0
-MDgsLTIwODI5NDMzOTgsMTc5MDY5NjQyMSwtMTY1NjEwMzY1MC
-wxMTQxMDA1ODA2LDUxMDI1MTQ2OCwxOTE0ODAxNDE4LDEzNDg4
-MDAyMjksLTE1MDg1OTkzMzIsNDIyMTAyNzY3LDg2MzUyMDUxOC
-wtNjM2NjE5MTgzLDg0MzUyNDM0Nyw0NTMyODEzMzIsLTE1Njc2
-MjkwNzVdfQ==
+eyJoaXN0b3J5IjpbLTEwMjQ3MTA3MDAsMTk0MjkxMzUzMSwtMj
+A0NjQ3NzcxMiwtMTgxNjQwODI4NiwxNTE1NDU0OTQzLDQ2MzY3
+ODQwOCwtMjA4Mjk0MzM5OCwxNzkwNjk2NDIxLC0xNjU2MTAzNj
+UwLDExNDEwMDU4MDYsNTEwMjUxNDY4LDE5MTQ4MDE0MTgsMTM0
+ODgwMDIyOSwtMTUwODU5OTMzMiw0MjIxMDI3NjcsODYzNTIwNT
+E4LC02MzY2MTkxODMsODQzNTI0MzQ3LDQ1MzI4MTMzMiwtMTU2
+NzYyOTA3NV19
 -->
