@@ -46,10 +46,10 @@ The intent of this guide is to create a single source of information for buildin
 
  ### Consumer first
 
- - **Contract Testing** - Consumers of services create tests that indicate, which parts of the service's API they are using. Those tests are then executed as part of the continuous integration of the service, so that it can make sure the contract is not broken. This allows for api cha
+ - **Contract Testing** - Consumers of services create tests that indicate, which parts of the service's API they are using. Those tests are then executed as part of the continuous integration of the service, so that it can make sure the contract is not broken. This allows for api changes to be made with more certainty.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNDc0Mjg4MCwxMzQ4ODAwMjI5LC0xNT
+eyJoaXN0b3J5IjpbLTEwNjg0MjAzNCwxMzQ4ODAwMjI5LC0xNT
 A4NTk5MzMyLDQyMjEwMjc2Nyw4NjM1MjA1MTgsLTYzNjYxOTE4
 Myw4NDM1MjQzNDcsNDUzMjgxMzMyLC0xNTY3NjI5MDc1LC00OT
 U1NDE2NTgsLTE0NTEwNTI1MzgsMTU4MDkyOTA3NywxMjg5Njk5
