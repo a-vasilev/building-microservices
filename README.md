@@ -25,7 +25,7 @@ Microservices architecture enables continuous delivery of large complex systems.
  One service per host, one database per service. 
  
  - Docker
- - Contract Testing - Consumers of services create tests that indicate, which parts of the service's API they are using. Those tests are then executed as part of the continuous integration of the service, so that it can make sure the contract is not broken. This allows for api changes to be made with certainty that nothing is broken.
+ - Contract Testing - Consumer service of a service creates tests that indicate, which parts of the service's API they are using. Those tests are then executed as part of the continuous integration of the service, so that it can make sure the contract is not broken. This allows for api changes to be made with certainty that nothing is broken.
 
  ### Modeled around a business domain
  ### Automate every aspect
@@ -55,11 +55,11 @@ Microservices architecture enables continuous delivery of large complex systems.
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTYxMDM2NTAsMTE0MTAwNTgwNiw1MT
-AyNTE0NjgsMTkxNDgwMTQxOCwxMzQ4ODAwMjI5LC0xNTA4NTk5
-MzMyLDQyMjEwMjc2Nyw4NjM1MjA1MTgsLTYzNjYxOTE4Myw4ND
-M1MjQzNDcsNDUzMjgxMzMyLC0xNTY3NjI5MDc1LC00OTU1NDE2
-NTgsLTE0NTEwNTI1MzgsMTU4MDkyOTA3NywxMjg5Njk5MzQ4LC
-0xMTQ2NjQwNzk4LC0zODAxNTA2MzUsMjA5NDE1NTY2MiwtNjM4
-OTMwNDg1XX0=
+eyJoaXN0b3J5IjpbLTYwNDYyMjc4NSwtMTY1NjEwMzY1MCwxMT
+QxMDA1ODA2LDUxMDI1MTQ2OCwxOTE0ODAxNDE4LDEzNDg4MDAy
+MjksLTE1MDg1OTkzMzIsNDIyMTAyNzY3LDg2MzUyMDUxOCwtNj
+M2NjE5MTgzLDg0MzUyNDM0Nyw0NTMyODEzMzIsLTE1Njc2Mjkw
+NzUsLTQ5NTU0MTY1OCwtMTQ1MTA1MjUzOCwxNTgwOTI5MDc3LD
+EyODk2OTkzNDgsLTExNDY2NDA3OTgsLTM4MDE1MDYzNSwyMDk0
+MTU1NjYyXX0=
 -->
