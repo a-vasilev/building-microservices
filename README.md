@@ -31,17 +31,18 @@ The intent of this guide is to create a single source of information for buildin
  ### Hide implementation details
  The only communication in a microservices system should happen through api calls between the services.
 
- - Finely gri
+ - Focus on creating finely grained service APIs. Only expose what **needs** to be exposed.
+ - 
  ### Isolate failure
  ### Decentralize everything
  ### Monitor everything
  ### Consumer first
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDc0MDAxMDksODQzNTI0MzQ3LDQ1Mz
-I4MTMzMiwtMTU2NzYyOTA3NSwtNDk1NTQxNjU4LC0xNDUxMDUy
-NTM4LDE1ODA5MjkwNzcsMTI4OTY5OTM0OCwtMTE0NjY0MDc5OC
-wtMzgwMTUwNjM1LDIwOTQxNTU2NjIsLTYzODkzMDQ4NSw3MjYy
-MzIyMjgsOTQyNjAxMzkxLDE1ODkyNTA1NDYsMjAzMTkyNzIwNF
-19
+eyJoaXN0b3J5IjpbMjA5NzgxNjM2Nyw4NDM1MjQzNDcsNDUzMj
+gxMzMyLC0xNTY3NjI5MDc1LC00OTU1NDE2NTgsLTE0NTEwNTI1
+MzgsMTU4MDkyOTA3NywxMjg5Njk5MzQ4LC0xMTQ2NjQwNzk4LC
+0zODAxNTA2MzUsMjA5NDE1NTY2MiwtNjM4OTMwNDg1LDcyNjIz
+MjIyOCw5NDI2MDEzOTEsMTU4OTI1MDU0NiwyMDMxOTI3MjA0XX
+0=
 -->
