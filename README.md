@@ -16,7 +16,7 @@ The intent of this guide is to create a single source of information for buildin
 
 > Collection of loosely coupled services modeled around a business domain.
 
-It's an architecture that enables horizont
+Microservices architecture enables the 
 
 ## Principles of microservices
 
@@ -51,11 +51,11 @@ It's an architecture that enables horizont
  - **Contract Testing** - Consumers of services create tests that indicate, which parts of the service's API they are using. Those tests are then executed as part of the continuous integration of the service, so that it can make sure the contract is not broken. This allows for api changes to be made with certainty that nothing is broken.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNDU4MTEzOSwxOTE0ODAxNDE4LDEzND
-g4MDAyMjksLTE1MDg1OTkzMzIsNDIyMTAyNzY3LDg2MzUyMDUx
-OCwtNjM2NjE5MTgzLDg0MzUyNDM0Nyw0NTMyODEzMzIsLTE1Nj
-c2MjkwNzUsLTQ5NTU0MTY1OCwtMTQ1MTA1MjUzOCwxNTgwOTI5
-MDc3LDEyODk2OTkzNDgsLTExNDY2NDA3OTgsLTM4MDE1MDYzNS
-wyMDk0MTU1NjYyLC02Mzg5MzA0ODUsNzI2MjMyMjI4LDk0MjYw
-MTM5MV19
+eyJoaXN0b3J5IjpbNTEwMjUxNDY4LDE5MTQ4MDE0MTgsMTM0OD
+gwMDIyOSwtMTUwODU5OTMzMiw0MjIxMDI3NjcsODYzNTIwNTE4
+LC02MzY2MTkxODMsODQzNTI0MzQ3LDQ1MzI4MTMzMiwtMTU2Nz
+YyOTA3NSwtNDk1NTQxNjU4LC0xNDUxMDUyNTM4LDE1ODA5Mjkw
+NzcsMTI4OTY5OTM0OCwtMTE0NjY0MDc5OCwtMzgwMTUwNjM1LD
+IwOTQxNTU2NjIsLTYzODkzMDQ4NSw3MjYyMzIyMjgsOTQyNjAx
+MzkxXX0=
 -->
