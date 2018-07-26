@@ -55,13 +55,15 @@ Microservices architecture enables continuous delivery of large complex systems.
  - Correlation IDs
 
  ### Consumer first
- 
+ Make information about the service easily available to consumers.
+ - Swagger
+ - Wikis with additional information or even stats.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYzNjc4NDA4LC0yMDgyOTQzMzk4LDE3OT
-A2OTY0MjEsLTE2NTYxMDM2NTAsMTE0MTAwNTgwNiw1MTAyNTE0
-NjgsMTkxNDgwMTQxOCwxMzQ4ODAwMjI5LC0xNTA4NTk5MzMyLD
-QyMjEwMjc2Nyw4NjM1MjA1MTgsLTYzNjYxOTE4Myw4NDM1MjQz
-NDcsNDUzMjgxMzMyLC0xNTY3NjI5MDc1LC00OTU1NDE2NTgsLT
-E0NTEwNTI1MzgsMTU4MDkyOTA3NywxMjg5Njk5MzQ4LC0xMTQ2
-NjQwNzk4XX0=
+eyJoaXN0b3J5IjpbMTMzNzE0NTIxLDQ2MzY3ODQwOCwtMjA4Mj
+k0MzM5OCwxNzkwNjk2NDIxLC0xNjU2MTAzNjUwLDExNDEwMDU4
+MDYsNTEwMjUxNDY4LDE5MTQ4MDE0MTgsMTM0ODgwMDIyOSwtMT
+UwODU5OTMzMiw0MjIxMDI3NjcsODYzNTIwNTE4LC02MzY2MTkx
+ODMsODQzNTI0MzQ3LDQ1MzI4MTMzMiwtMTU2NzYyOTA3NSwtND
+k1NTQxNjU4LC0xNDUxMDUyNTM4LDE1ODA5MjkwNzcsMTI4OTY5
+OTM0OF19
 -->
