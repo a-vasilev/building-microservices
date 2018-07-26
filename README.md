@@ -47,7 +47,7 @@ Microservices architecture enables continuous delivery of large complex systems.
  ### Isolate failure
  With microservices comes network communication, which makes the whole system a lot easier to break than a monolith. The reliable in-process calls are changed with network calls to an outside service, which you can't guarantee will be there. 
  Every service should be fault tolerant and should be able to run (even at   diminished functionality) whenever another service that it connects to is down.
- When one service cal fails it must fail quickly, so that it doesn't tie up resources and consumers of that service might programatically degrade functionality.
+ When one service cal fails it must fail quickly, so that it doesn't tie up resources and consumers of that service might programmatically degrade functionality.
  
  - [Hystrix](https://github.com/Netflix/hystrix) - library designed to isolate points of access to remote systems.
  - Bulkheading
@@ -64,7 +64,7 @@ Microservices architecture enables continuous delivery of large complex systems.
  - Swagger
  - Wikis with additional information or even stats.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NzY2MjkwLC0xODE2NDA4Mjg2LDE1MT
+eyJoaXN0b3J5IjpbODMzNzI0NTE3LC0xODE2NDA4Mjg2LDE1MT
 U0NTQ5NDMsNDYzNjc4NDA4LC0yMDgyOTQzMzk4LDE3OTA2OTY0
 MjEsLTE2NTYxMDM2NTAsMTE0MTAwNTgwNiw1MTAyNTE0NjgsMT
 kxNDgwMTQxOCwxMzQ4ODAwMjI5LC0xNTA4NTk5MzMyLDQyMjEw
