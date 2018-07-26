@@ -65,7 +65,7 @@ Microservices architecture enables continuous delivery of large complex systems.
  
  - Aggregation of stats
  - Aggregation of all logs
- - Correlation IDs - At the beginning of a call train generate an ID, which gets passed down the call train and gets recorded by every different service. If an error happens the ID is also recorded. This way via log aggregation you can check
+ - Correlation IDs - At the beginning of a call train generate an ID, which gets passed down the call train and gets recorded by every different service. If an error happens the ID is also recorded. This way via log aggregation you can check the whole life cycle of this request and it makes it a lot easier to debug issues once the system gets big and complicated. The problem is that they are hard to implement once 
 
  ### Consumer first
  Make information about the service easily available to consumers.
@@ -74,11 +74,11 @@ Microservices architecture enables continuous delivery of large complex systems.
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYxMzU0NzkzLDE5NDI5MTM1MzEsLTIwND
-Y0Nzc3MTIsLTE4MTY0MDgyODYsMTUxNTQ1NDk0Myw0NjM2Nzg0
-MDgsLTIwODI5NDMzOTgsMTc5MDY5NjQyMSwtMTY1NjEwMzY1MC
-wxMTQxMDA1ODA2LDUxMDI1MTQ2OCwxOTE0ODAxNDE4LDEzNDg4
-MDAyMjksLTE1MDg1OTkzMzIsNDIyMTAyNzY3LDg2MzUyMDUxOC
-wtNjM2NjE5MTgzLDg0MzUyNDM0Nyw0NTMyODEzMzIsLTE1Njc2
-MjkwNzVdfQ==
+eyJoaXN0b3J5IjpbLTEzNzExODM0ODcsMTk0MjkxMzUzMSwtMj
+A0NjQ3NzcxMiwtMTgxNjQwODI4NiwxNTE1NDU0OTQzLDQ2MzY3
+ODQwOCwtMjA4Mjk0MzM5OCwxNzkwNjk2NDIxLC0xNjU2MTAzNj
+UwLDExNDEwMDU4MDYsNTEwMjUxNDY4LDE5MTQ4MDE0MTgsMTM0
+ODgwMDIyOSwtMTUwODU5OTMzMiw0MjIxMDI3NjcsODYzNTIwNT
+E4LC02MzY2MTkxODMsODQzNTI0MzQ3LDQ1MzI4MTMzMiwtMTU2
+NzYyOTA3NV19
 -->
