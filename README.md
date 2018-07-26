@@ -35,7 +35,7 @@ Microservices architecture enables continuous delivery of large complex systems.
 	 - Deploy two versions of the service itself, this is useful when there are consumers that can't be switched to the new version. This approach should be avoided as it complicates service discovery and if you have to fix a critical bug in the service you would need to fix it in two places.
 
  ### Modeled around a business domain
- Every service should be modeled around a business domain rather than some kind of a technological grouping. This leads to every service having a more strictly defined boundaries and less changing APIs. This also means that the teams that build a microservice also become very knowledgeable in that part of the business domain. It also helps when it come
+ Every service should be modeled around a business domain rather than some kind of a technological grouping. This leads to every service having a more strictly defined boundaries and less changing APIs. This also means that the teams that build a microservice also become very knowledgeable in that part of the business domain. It also reduced the cross-cutting changes needed when implementing new features.
  
  ### Automate every aspect
  This principle requires a lot of time and effort upfront without a lot of benefit at first, but once everything is in place creating, maintaining and deploying a new service becomes trivial.
@@ -76,11 +76,11 @@ Microservices architecture enables continuous delivery of large complex systems.
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNDM2MDUyNiwxODUxMDY2ODUwLDE5ND
-I5MTM1MzEsLTIwNDY0Nzc3MTIsLTE4MTY0MDgyODYsMTUxNTQ1
-NDk0Myw0NjM2Nzg0MDgsLTIwODI5NDMzOTgsMTc5MDY5NjQyMS
-wtMTY1NjEwMzY1MCwxMTQxMDA1ODA2LDUxMDI1MTQ2OCwxOTE0
-ODAxNDE4LDEzNDg4MDAyMjksLTE1MDg1OTkzMzIsNDIyMTAyNz
-Y3LDg2MzUyMDUxOCwtNjM2NjE5MTgzLDg0MzUyNDM0Nyw0NTMy
-ODEzMzJdfQ==
+eyJoaXN0b3J5IjpbLTE2NzYxODY1ODksMTg1MTA2Njg1MCwxOT
+QyOTEzNTMxLC0yMDQ2NDc3NzEyLC0xODE2NDA4Mjg2LDE1MTU0
+NTQ5NDMsNDYzNjc4NDA4LC0yMDgyOTQzMzk4LDE3OTA2OTY0Mj
+EsLTE2NTYxMDM2NTAsMTE0MTAwNTgwNiw1MTAyNTE0NjgsMTkx
+NDgwMTQxOCwxMzQ4ODAwMjI5LC0xNTA4NTk5MzMyLDQyMjEwMj
+c2Nyw4NjM1MjA1MTgsLTYzNjYxOTE4Myw4NDM1MjQzNDcsNDUz
+MjgxMzMyXX0=
 -->
