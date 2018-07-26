@@ -45,7 +45,7 @@ Microservices architecture enables continuous delivery of large complex systems.
  - Hide the databases. Every microservice should have its own database. This allows for deploying services independently. If two services read from the same schema updating the schema due to changes needed in service A would mean that service B would be impacted as well.
  
  ### Isolate failure
- With microservices comes network communication, which makes the . 
+ With microservices comes network communication, which makes the whole system a lot easier to break than a monolith. The reliable in-process calls are changed with network calls to an outside service, which you can't guarantee will be there. 
  Every service should be fault tolerant and should be able to run (even at   diminished functionality) whenever another service that it connects to is down.
  
  - [Hystrix](https://github.com/Netflix/hystrix) - library designed to isolate points of access to remote systems.
@@ -61,11 +61,11 @@ Microservices architecture enables continuous delivery of large complex systems.
  - Swagger
  - Wikis with additional information or even stats.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNTQ1NDk0Myw0NjM2Nzg0MDgsLTIwOD
-I5NDMzOTgsMTc5MDY5NjQyMSwtMTY1NjEwMzY1MCwxMTQxMDA1
-ODA2LDUxMDI1MTQ2OCwxOTE0ODAxNDE4LDEzNDg4MDAyMjksLT
-E1MDg1OTkzMzIsNDIyMTAyNzY3LDg2MzUyMDUxOCwtNjM2NjE5
-MTgzLDg0MzUyNDM0Nyw0NTMyODEzMzIsLTE1Njc2MjkwNzUsLT
-Q5NTU0MTY1OCwtMTQ1MTA1MjUzOCwxNTgwOTI5MDc3LDEyODk2
-OTkzNDhdfQ==
+eyJoaXN0b3J5IjpbLTE4MTY0MDgyODYsMTUxNTQ1NDk0Myw0Nj
+M2Nzg0MDgsLTIwODI5NDMzOTgsMTc5MDY5NjQyMSwtMTY1NjEw
+MzY1MCwxMTQxMDA1ODA2LDUxMDI1MTQ2OCwxOTE0ODAxNDE4LD
+EzNDg4MDAyMjksLTE1MDg1OTkzMzIsNDIyMTAyNzY3LDg2MzUy
+MDUxOCwtNjM2NjE5MTgzLDg0MzUyNDM0Nyw0NTMyODEzMzIsLT
+E1Njc2MjkwNzUsLTQ5NTU0MTY1OCwtMTQ1MTA1MjUzOCwxNTgw
+OTI5MDc3XX0=
 -->
