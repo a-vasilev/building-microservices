@@ -52,7 +52,7 @@ Microservices architecture enables continuous delivery of large complex systems.
  - Bulkhead Pattern - if a service doesn't respond in a timely manner it should not impact the ability of the consumer to call other services.
  - Timeouts - make more aggressive timeouts
  - Circuit Breakers
- - [Hystrix](https://github.com/Netflix/hystrix) - library designed to isolate points of access to remote systems.
+ - [Hystrix](https://github.com/Netflix/hystrix) - library designed to isolate points of access to remote systems. Helps with Circuit Breakers
 
  ### Decentralize everything
  The ideology here is to use dumb pipes and infrastructure and contain the logic only in the microservices. Message brokers shouldn't be aware of the domain, they need to be kept as simple as possible. 
@@ -65,7 +65,7 @@ Microservices architecture enables continuous delivery of large complex systems.
  - Swagger
  - Wikis with additional information or even stats.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NTc0ODE0MywtMjA0NjQ3NzcxMiwtMT
+eyJoaXN0b3J5IjpbMTk0MjkxMzUzMSwtMjA0NjQ3NzcxMiwtMT
 gxNjQwODI4NiwxNTE1NDU0OTQzLDQ2MzY3ODQwOCwtMjA4Mjk0
 MzM5OCwxNzkwNjk2NDIxLC0xNjU2MTAzNjUwLDExNDEwMDU4MD
 YsNTEwMjUxNDY4LDE5MTQ4MDE0MTgsMTM0ODgwMDIyOSwtMTUw
