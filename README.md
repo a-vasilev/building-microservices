@@ -16,7 +16,7 @@ The intent of this guide is to create a single source of information for buildin
 
 > Collection of loosely coupled services modeled around a business domain.
 
-Microservices architecture enables continuous delivery of large complex systems. It also makes for systems that can be scaled horizontally. It enables developers to evolve the technological stack that is used and it also allows for using the correct tool for each task. All of the benefits also make it pre
+Microservices architecture enables continuous delivery of large complex systems. It also makes for systems that can be scaled horizontally. It enables developers to evolve the technological stack that is used and it also allows for using the correct tool for each task. All of the benefits also make it pretty complex to implement properly.
 
 ## Principles of microservices
 
@@ -51,11 +51,11 @@ Microservices architecture enables continuous delivery of large complex systems.
  - **Contract Testing** - Consumers of services create tests that indicate, which parts of the service's API they are using. Those tests are then executed as part of the continuous integration of the service, so that it can make sure the contract is not broken. This allows for api changes to be made with certainty that nothing is broken.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcxMjY0MzYwLDUxMDI1MTQ2OCwxOTE0OD
-AxNDE4LDEzNDg4MDAyMjksLTE1MDg1OTkzMzIsNDIyMTAyNzY3
-LDg2MzUyMDUxOCwtNjM2NjE5MTgzLDg0MzUyNDM0Nyw0NTMyOD
-EzMzIsLTE1Njc2MjkwNzUsLTQ5NTU0MTY1OCwtMTQ1MTA1MjUz
-OCwxNTgwOTI5MDc3LDEyODk2OTkzNDgsLTExNDY2NDA3OTgsLT
-M4MDE1MDYzNSwyMDk0MTU1NjYyLC02Mzg5MzA0ODUsNzI2MjMy
-MjI4XX0=
+eyJoaXN0b3J5IjpbMTE0MTAwNTgwNiw1MTAyNTE0NjgsMTkxND
+gwMTQxOCwxMzQ4ODAwMjI5LC0xNTA4NTk5MzMyLDQyMjEwMjc2
+Nyw4NjM1MjA1MTgsLTYzNjYxOTE4Myw4NDM1MjQzNDcsNDUzMj
+gxMzMyLC0xNTY3NjI5MDc1LC00OTU1NDE2NTgsLTE0NTEwNTI1
+MzgsMTU4MDkyOTA3NywxMjg5Njk5MzQ4LC0xMTQ2NjQwNzk4LC
+0zODAxNTA2MzUsMjA5NDE1NTY2MiwtNjM4OTMwNDg1LDcyNjIz
+MjIyOF19
 -->
