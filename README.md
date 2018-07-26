@@ -27,7 +27,8 @@ Microservices architecture enables continuous delivery of large complex systems.
  - Docker
  - Contract Testing - Consumer of a service creates tests that indicate, which parts of the service's API they are using. Those tests are then executed as part of the continuous integration of the service, so that it can make sure the contract is not broken. This allows for api changes to be made with certainty that nothing is broken, also if something is broken we know exactly which consumer was broken.
  - How to break API contracts - Consumers can't and should not be forced to upgrade to the new API instantly, so provide the old version of the api as well as the new version until all consumers have migrated to the new one. This can be done in two ways:
-	 - Simply expose both version of the
+	 - Simply expose both version of the API through the service
+	 - Deploy two versions of the service itself, this is useful when there are consumers that can't be switched to the new version. This approach should be avoided as it complicates service discovery and 
 
  ### Modeled around a business domain
  ### Automate every aspect
@@ -57,11 +58,11 @@ Microservices architecture enables continuous delivery of large complex systems.
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM0ODMzMzU1LDE3OTA2OTY0MjEsLTE2NT
-YxMDM2NTAsMTE0MTAwNTgwNiw1MTAyNTE0NjgsMTkxNDgwMTQx
-OCwxMzQ4ODAwMjI5LC0xNTA4NTk5MzMyLDQyMjEwMjc2Nyw4Nj
-M1MjA1MTgsLTYzNjYxOTE4Myw4NDM1MjQzNDcsNDUzMjgxMzMy
-LC0xNTY3NjI5MDc1LC00OTU1NDE2NTgsLTE0NTEwNTI1MzgsMT
-U4MDkyOTA3NywxMjg5Njk5MzQ4LC0xMTQ2NjQwNzk4LC0zODAx
-NTA2MzVdfQ==
+eyJoaXN0b3J5IjpbLTc2MDQ0Mjc3MSwxNzkwNjk2NDIxLC0xNj
+U2MTAzNjUwLDExNDEwMDU4MDYsNTEwMjUxNDY4LDE5MTQ4MDE0
+MTgsMTM0ODgwMDIyOSwtMTUwODU5OTMzMiw0MjIxMDI3NjcsOD
+YzNTIwNTE4LC02MzY2MTkxODMsODQzNTI0MzQ3LDQ1MzI4MTMz
+MiwtMTU2NzYyOTA3NSwtNDk1NTQxNjU4LC0xNDUxMDUyNTM4LD
+E1ODA5MjkwNzcsMTI4OTY5OTM0OCwtMTE0NjY0MDc5OCwtMzgw
+MTUwNjM1XX0=
 -->
