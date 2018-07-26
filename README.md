@@ -49,8 +49,9 @@ Microservices architecture enables continuous delivery of large complex systems.
  Every service should be fault tolerant and should be able to run (even at   diminished functionality) whenever another service that it connects to is down.
  When one service call fails it must fail quickly, so that it doesn't tie up resources and consumers of that service might programmatically degrade functionality.
  
- - Bulkhead Pattern - 
- - Timeouts - make a lot more aggressive timeouts
+ - Bulkhead Pattern - if a service doesn't respond in a timely manner it should not impact the ability of the consumer to call other services.
+ - Timeouts - make more aggressive timeouts
+ - Circuit Breakers
  - [Hystrix](https://github.com/Netflix/hystrix) - library designed to isolate points of access to remote systems.
 
  ### Decentralize everything
@@ -64,11 +65,11 @@ Microservices architecture enables continuous delivery of large complex systems.
  - Swagger
  - Wikis with additional information or even stats.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIxNjcyMjc4LC0yMDQ2NDc3NzEyLC0xOD
-E2NDA4Mjg2LDE1MTU0NTQ5NDMsNDYzNjc4NDA4LC0yMDgyOTQz
-Mzk4LDE3OTA2OTY0MjEsLTE2NTYxMDM2NTAsMTE0MTAwNTgwNi
-w1MTAyNTE0NjgsMTkxNDgwMTQxOCwxMzQ4ODAwMjI5LC0xNTA4
-NTk5MzMyLDQyMjEwMjc2Nyw4NjM1MjA1MTgsLTYzNjYxOTE4My
-w4NDM1MjQzNDcsNDUzMjgxMzMyLC0xNTY3NjI5MDc1LC00OTU1
-NDE2NThdfQ==
+eyJoaXN0b3J5IjpbLTk0NTc0ODE0MywtMjA0NjQ3NzcxMiwtMT
+gxNjQwODI4NiwxNTE1NDU0OTQzLDQ2MzY3ODQwOCwtMjA4Mjk0
+MzM5OCwxNzkwNjk2NDIxLC0xNjU2MTAzNjUwLDExNDEwMDU4MD
+YsNTEwMjUxNDY4LDE5MTQ4MDE0MTgsMTM0ODgwMDIyOSwtMTUw
+ODU5OTMzMiw0MjIxMDI3NjcsODYzNTIwNTE4LC02MzY2MTkxOD
+MsODQzNTI0MzQ3LDQ1MzI4MTMzMiwtMTU2NzYyOTA3NSwtNDk1
+NTQxNjU4XX0=
 -->
