@@ -23,7 +23,10 @@ Microservices architecture enables continuous delivery of large complex systems.
  ### Independently deployable
  Every microservice should be self contained and redeploying it should not    depend on any other microservice. 
  One service per host, one database per service. 
+ 
  - Docker
+ - Contract Testing - Consumers of services create tests that indicate, which parts of the service's API they are using. Those tests are then executed as part of the continuous integration of the service, so that it can make sure the contract is not broken. This allows for api changes to be made with certainty that nothing is broken.
+
  ### Modeled around a business domain
  ### Automate every aspect
  This principle requires a lot of time and effort upfront without a lot of benefit at first, but once everything is in place creating, maintaining and deploying a new service becomes trivial.
@@ -50,14 +53,13 @@ Microservices architecture enables continuous delivery of large complex systems.
 
  ### Consumer first
 
- - **Contract Testing** - Consumers of services create tests that indicate, which parts of the service's API they are using. Those tests are then executed as part of the continuous integration of the service, so that it can make sure the contract is not broken. This allows for api changes to be made with certainty that nothing is broken.
-
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5NTY3NDc5MiwxMTQxMDA1ODA2LDUxMD
-I1MTQ2OCwxOTE0ODAxNDE4LDEzNDg4MDAyMjksLTE1MDg1OTkz
-MzIsNDIyMTAyNzY3LDg2MzUyMDUxOCwtNjM2NjE5MTgzLDg0Mz
-UyNDM0Nyw0NTMyODEzMzIsLTE1Njc2MjkwNzUsLTQ5NTU0MTY1
-OCwtMTQ1MTA1MjUzOCwxNTgwOTI5MDc3LDEyODk2OTkzNDgsLT
-ExNDY2NDA3OTgsLTM4MDE1MDYzNSwyMDk0MTU1NjYyLC02Mzg5
-MzA0ODVdfQ==
+eyJoaXN0b3J5IjpbLTE2NTYxMDM2NTAsMTE0MTAwNTgwNiw1MT
+AyNTE0NjgsMTkxNDgwMTQxOCwxMzQ4ODAwMjI5LC0xNTA4NTk5
+MzMyLDQyMjEwMjc2Nyw4NjM1MjA1MTgsLTYzNjYxOTE4Myw4ND
+M1MjQzNDcsNDUzMjgxMzMyLC0xNTY3NjI5MDc1LC00OTU1NDE2
+NTgsLTE0NTEwNTI1MzgsMTU4MDkyOTA3NywxMjg5Njk5MzQ4LC
+0xMTQ2NjQwNzk4LC0zODAxNTA2MzUsMjA5NDE1NTY2MiwtNjM4
+OTMwNDg1XX0=
 -->
