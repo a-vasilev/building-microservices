@@ -28,7 +28,7 @@ Microservices architecture enables continuous delivery of large complex systems.
  - Contract Testing - Consumer of a service creates tests that indicate, which parts of the service's API they are using. Those tests are then executed as part of the continuous integration of the service, so that it can make sure the contract is not broken. This allows for api changes to be made with certainty that nothing is broken, also if something is broken we know exactly which consumer was broken.
  - How to break API contracts - Consumers can't and should not be forced to upgrade to the new API instantly, so provide the old version of the api as well as the new version until all consumers have migrated to the new one. This can be done in two ways:
 	 - Simply expose both version of the API through the service
-	 - Deploy two versions of the service itself, this is useful when there are consumers that can't be switched to the new version. This approach should be avoided as it complicates service discovery and 
+	 - Deploy two versions of the service itself, this is useful when there are consumers that can't be switched to the new version. This approach should be avoided as it complicates service discovery and if you have to fix a critical bug in the service you would need to fix it in two places.
 
  ### Modeled around a business domain
  ### Automate every aspect
@@ -58,11 +58,11 @@ Microservices architecture enables continuous delivery of large complex systems.
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MDQ0Mjc3MSwxNzkwNjk2NDIxLC0xNj
-U2MTAzNjUwLDExNDEwMDU4MDYsNTEwMjUxNDY4LDE5MTQ4MDE0
-MTgsMTM0ODgwMDIyOSwtMTUwODU5OTMzMiw0MjIxMDI3NjcsOD
-YzNTIwNTE4LC02MzY2MTkxODMsODQzNTI0MzQ3LDQ1MzI4MTMz
-MiwtMTU2NzYyOTA3NSwtNDk1NTQxNjU4LC0xNDUxMDUyNTM4LD
-E1ODA5MjkwNzcsMTI4OTY5OTM0OCwtMTE0NjY0MDc5OCwtMzgw
-MTUwNjM1XX0=
+eyJoaXN0b3J5IjpbLTIwODI5NDMzOTgsMTc5MDY5NjQyMSwtMT
+Y1NjEwMzY1MCwxMTQxMDA1ODA2LDUxMDI1MTQ2OCwxOTE0ODAx
+NDE4LDEzNDg4MDAyMjksLTE1MDg1OTkzMzIsNDIyMTAyNzY3LD
+g2MzUyMDUxOCwtNjM2NjE5MTgzLDg0MzUyNDM0Nyw0NTMyODEz
+MzIsLTE1Njc2MjkwNzUsLTQ5NTU0MTY1OCwtMTQ1MTA1MjUzOC
+wxNTgwOTI5MDc3LDEyODk2OTkzNDgsLTExNDY2NDA3OTgsLTM4
+MDE1MDYzNV19
 -->
