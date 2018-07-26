@@ -49,8 +49,7 @@ Microservices architecture enables continuous delivery of large complex systems.
  Every service should be fault tolerant and should be able to run (even at   diminished functionality) whenever another service that it connects to is down.
  When one service call fails it must fail quickly, so that it doesn't tie up resources and consumers of that service might programmatically degrade functionality.
  
- 
- - Bulkheading - 
+ - Bulkhead Pattern - 
  - Timeouts - make a lot more aggressive timeouts
  - [Hystrix](https://github.com/Netflix/hystrix) - library designed to isolate points of access to remote systems.
 
@@ -65,11 +64,11 @@ Microservices architecture enables continuous delivery of large complex systems.
  - Swagger
  - Wikis with additional information or even stats.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDY0Nzc3MTIsLTE4MTY0MDgyODYsMT
-UxNTQ1NDk0Myw0NjM2Nzg0MDgsLTIwODI5NDMzOTgsMTc5MDY5
-NjQyMSwtMTY1NjEwMzY1MCwxMTQxMDA1ODA2LDUxMDI1MTQ2OC
-wxOTE0ODAxNDE4LDEzNDg4MDAyMjksLTE1MDg1OTkzMzIsNDIy
-MTAyNzY3LDg2MzUyMDUxOCwtNjM2NjE5MTgzLDg0MzUyNDM0Ny
-w0NTMyODEzMzIsLTE1Njc2MjkwNzUsLTQ5NTU0MTY1OCwtMTQ1
-MTA1MjUzOF19
+eyJoaXN0b3J5IjpbNzIxNjcyMjc4LC0yMDQ2NDc3NzEyLC0xOD
+E2NDA4Mjg2LDE1MTU0NTQ5NDMsNDYzNjc4NDA4LC0yMDgyOTQz
+Mzk4LDE3OTA2OTY0MjEsLTE2NTYxMDM2NTAsMTE0MTAwNTgwNi
+w1MTAyNTE0NjgsMTkxNDgwMTQxOCwxMzQ4ODAwMjI5LC0xNTA4
+NTk5MzMyLDQyMjEwMjc2Nyw4NjM1MjA1MTgsLTYzNjYxOTE4My
+w4NDM1MjQzNDcsNDUzMjgxMzMyLC0xNTY3NjI5MDc1LC00OTU1
+NDE2NThdfQ==
 -->
