@@ -1,7 +1,8 @@
 # Building Microservices
 ## Introduction
 The intent of this article is to create a single source of information for building and scaling microservices systems. It will contain both theoretical information and more detailed practicle examples and technologies that can be used for solving different problems that can arise when dealing with distributed systems. 
-A lot of the information is aggregated from different sources, they can be found at the end of the 
+A lot of the information is aggregated from different sources, they can be found at the end of the article.
+
 ### Contents
  - [What are microservices?](#what-are-microservices)
  - [Principles of microservices](#principles-of-microservices)
@@ -13,6 +14,8 @@ A lot of the information is aggregated from different sources, they can be found
 	 - [Decentralize everything](#decentralize-everything)
 	 - [Monitor everything](#monitor-everything)
 	 - [Consumer first](#consumer-first)
+ - [Resources](#resources)
+
 ## What are microservices?
 
 > Collection of loosely coupled services modeled around a business domain.
@@ -68,12 +71,14 @@ Microservices architecture enables continuous delivery of large complex systems.
  Make information about the service easily available to consumers.
  - Swagger
  - Wikis with additional information or even stats.
+
+## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNDk4OTU0MywxOTQyOTEzNTMxLC0yMD
-Q2NDc3NzEyLC0xODE2NDA4Mjg2LDE1MTU0NTQ5NDMsNDYzNjc4
-NDA4LC0yMDgyOTQzMzk4LDE3OTA2OTY0MjEsLTE2NTYxMDM2NT
-AsMTE0MTAwNTgwNiw1MTAyNTE0NjgsMTkxNDgwMTQxOCwxMzQ4
-ODAwMjI5LC0xNTA4NTk5MzMyLDQyMjEwMjc2Nyw4NjM1MjA1MT
-gsLTYzNjYxOTE4Myw4NDM1MjQzNDcsNDUzMjgxMzMyLC0xNTY3
-NjI5MDc1XX0=
+eyJoaXN0b3J5IjpbODc2Mzk0NTE5LDE5NDI5MTM1MzEsLTIwND
+Y0Nzc3MTIsLTE4MTY0MDgyODYsMTUxNTQ1NDk0Myw0NjM2Nzg0
+MDgsLTIwODI5NDMzOTgsMTc5MDY5NjQyMSwtMTY1NjEwMzY1MC
+wxMTQxMDA1ODA2LDUxMDI1MTQ2OCwxOTE0ODAxNDE4LDEzNDg4
+MDAyMjksLTE1MDg1OTkzMzIsNDIyMTAyNzY3LDg2MzUyMDUxOC
+wtNjM2NjE5MTgzLDg0MzUyNDM0Nyw0NTMyODEzMzIsLTE1Njc2
+MjkwNzVdfQ==
 -->
