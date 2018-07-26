@@ -29,13 +29,14 @@ The intent of this guide is to create a single source of information for buildin
  - Continuous Delivery
 
  ### Hide implementation details
+ The only communication in a microservices system should happen through calls between the services
  ### Isolate failure
  ### Decentralize everything
  ### Monitor everything
  ### Consumer first
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMjIxMzE0MSw4NDM1MjQzNDcsNDUzMj
+eyJoaXN0b3J5IjpbLTIxMzk3MDkxMyw4NDM1MjQzNDcsNDUzMj
 gxMzMyLC0xNTY3NjI5MDc1LC00OTU1NDE2NTgsLTE0NTEwNTI1
 MzgsMTU4MDkyOTA3NywxMjg5Njk5MzQ4LC0xMTQ2NjQwNzk4LC
 0zODAxNTA2MzUsMjA5NDE1NTY2MiwtNjM4OTMwNDg1LDcyNjIz
