@@ -88,7 +88,7 @@ This issue is not only present with databases. We might need transactions, which
 
 ### Possible solutions
 - The best solution is to design your microservices in such a way that you don't need **synchronous** distributed transactions across multiple services. After all microservices architecture aims to avoid any kind of dependency between services, so having to coordinate two or more services to commit or rollback data at the same time would couple them quite a bit. In some cases we can try to avoid the need for cross service transactions, by making sure such business cases are encompased by a single microservice, so we need to have very well defined domain boundaries.
- - If we have to do distributed transactions the best way is to have one of the services be the "coordinator" of an asynchronous transaction. **This means that every business event would result in a single synchronous transaction.** One service would usually commit a normal synchronous transaction to its database, return a response and then start asynchronously calling other services to complete the whole transaction and achieve consistency **eventually**. If an asynchronous transaction fails it needs to be retried until successful. The pattern that should be used to achieve this is: **Commander, Retries and Idempotence**
+ - If we have to do distributed transactions the best way is to have one of the services be the "coordinator" of an asynchronous transaction. **This means that every business event would result in a single synchronous transaction and multiple asynchronous calls to remote services after it.** One service would usually commit a normal synchronous transaction to its database, return a response and then start asynchronously calling other services to complete the whole transaction and achieve consistency **eventually**. If an asynchronous transaction fails it needs to be retried until successful. The pattern that should be used to achieve this is: **Commander, Retries and Idempotence**
 	 - **Commander** - The service that coordinates the asynchronous transaction. It knows the instructions that need to be executed. It has to execute the remote calls to other services and once they are successful it needs to remove the events from its persistant event queue.
 	 - **Retries** - If an asynchronos event fails for whatever reason, the commander needs to retry it until it's completed. If the commander receives a successful response, but fails to remove the event from it's queue it needs to retry that too. If some other failure scenario happens the answer is retry.
 	 - **Idempotence** - This is the property of doing something twice and having the same result as if it was done only once. We need idempotence at the remote service or data source so that, in the cases where it receives the instruction more than once, it only processes it once.
@@ -101,11 +101,11 @@ This issue is not only present with databases. We might need transactions, which
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjI1MDk5NjcsMTYyOTY1OTE3MSwtND
-U5NTAzMTYxLDExMzU3MTMzOTgsLTE3OTEyMTc5NzYsLTEzOTYz
-NTc5MDMsLTEzNzcxOTM3OTksOTY2NTQ3NDIyLDEwNTA4NjM4Nj
-gsLTcwNjYxNzA5LC0xNTk4NTc2NjM4LDczODAxNzI4OCw2Nzcy
-NjQ3ODAsLTIwMTE2ODMyOTIsLTc2ODc0NjI0LDc3MjQ2MzYzNC
-w1NjY5Mzc1NiwyNTk0MTM3NDUsMTc0Njg0MDM0LC0xNjA3MzI2
-NzAxXX0=
+eyJoaXN0b3J5IjpbLTEyMzY1NTM2NDcsLTE1MjI1MDk5NjcsMT
+YyOTY1OTE3MSwtNDU5NTAzMTYxLDExMzU3MTMzOTgsLTE3OTEy
+MTc5NzYsLTEzOTYzNTc5MDMsLTEzNzcxOTM3OTksOTY2NTQ3ND
+IyLDEwNTA4NjM4NjgsLTcwNjYxNzA5LC0xNTk4NTc2NjM4LDcz
+ODAxNzI4OCw2NzcyNjQ3ODAsLTIwMTE2ODMyOTIsLTc2ODc0Nj
+I0LDc3MjQ2MzYzNCw1NjY5Mzc1NiwyNTk0MTM3NDUsMTc0Njg0
+MDM0XX0=
 -->
