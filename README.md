@@ -89,15 +89,18 @@ In this rather simple case we want the Customer and Order services to only talk 
 
  - Two-phase commit (2PC) protocol - This approach does work in some cases, but not all and it has a few problems:
 	 - The 2PC coordinator is a single point of failure, which we want to avoid in microservices.
-	 - Can be a bit slow at times 
+	 - Reduced throughput due to locks
+	 - Not supported by many NoSQL databases
+	 - Impacts availability
+ - Saga
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMTg3Njc4MSw3NzI0NjM2MzQsNTY2OT
-M3NTYsMjU5NDEzNzQ1LDE3NDY4NDAzNCwtMTYwNzMyNjcwMSwx
-OTMyNDI5NDg1LC0xNjA3MzI2NzAxLDE5MzI0Mjk0ODUsLTE2Nz
-YxODY1ODksMTg1MTA2Njg1MCwxOTQyOTEzNTMxLC0yMDQ2NDc3
-NzEyLC0xODE2NDA4Mjg2LDE1MTU0NTQ5NDMsNDYzNjc4NDA4LC
-0yMDgyOTQzMzk4LDE3OTA2OTY0MjEsLTE2NTYxMDM2NTAsMTE0
-MTAwNTgwNl19
+eyJoaXN0b3J5IjpbLTc2ODc0NjI0LDc3MjQ2MzYzNCw1NjY5Mz
+c1NiwyNTk0MTM3NDUsMTc0Njg0MDM0LC0xNjA3MzI2NzAxLDE5
+MzI0Mjk0ODUsLTE2MDczMjY3MDEsMTkzMjQyOTQ4NSwtMTY3Nj
+E4NjU4OSwxODUxMDY2ODUwLDE5NDI5MTM1MzEsLTIwNDY0Nzc3
+MTIsLTE4MTY0MDgyODYsMTUxNTQ1NDk0Myw0NjM2Nzg0MDgsLT
+IwODI5NDMzOTgsMTc5MDY5NjQyMSwtMTY1NjEwMzY1MCwxMTQx
+MDA1ODA2XX0=
 -->
