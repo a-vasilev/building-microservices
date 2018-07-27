@@ -89,7 +89,7 @@ This issue is not only present with databases. We might need transactions, which
 ### Possible solutions
 
  - The best solution is to design your microservices in such a way that you don't need **synchronous** distributed transactions across multiple services. After all microservices architecture aims to avoid any kind of dependency between services, so having to coordinate two or more services to commit or rollback data at the same time would couple them quite a bit. The way to avoid such transactions is by having one of the services be the "coordinator" of an asynchronous transaction. **This means that every business event would result in a single synchronous transaction.** One service would usually commit a normal synchronous transaction to its database, return a response and then start asynchronously calling other services to complete the whole transaction **eventually**. If an asynchronous transaction fails it needs to be retried until successful. 
- - In some cases we
+ - In some cases we can try to 
  - Sagas
  - Two-phase commit (2PC) protocol - This approach does work in some cases, but not all and it has a few problems:
 	 - The 2PC coordinator is a single point of failure, which we want to avoid in microservices.
@@ -99,11 +99,11 @@ This issue is not only present with databases. We might need transactions, which
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDcwMDg2NDgsLTEzNzcxOTM3OTksOT
-Y2NTQ3NDIyLDEwNTA4NjM4NjgsLTcwNjYxNzA5LC0xNTk4NTc2
-NjM4LDczODAxNzI4OCw2NzcyNjQ3ODAsLTIwMTE2ODMyOTIsLT
-c2ODc0NjI0LDc3MjQ2MzYzNCw1NjY5Mzc1NiwyNTk0MTM3NDUs
-MTc0Njg0MDM0LC0xNjA3MzI2NzAxLDE5MzI0Mjk0ODUsLTE2MD
-czMjY3MDEsMTkzMjQyOTQ4NSwtMTY3NjE4NjU4OSwxODUxMDY2
-ODUwXX0=
+eyJoaXN0b3J5IjpbMTkxNjg4ODY0OCwtMTM3NzE5Mzc5OSw5Nj
+Y1NDc0MjIsMTA1MDg2Mzg2OCwtNzA2NjE3MDksLTE1OTg1NzY2
+MzgsNzM4MDE3Mjg4LDY3NzI2NDc4MCwtMjAxMTY4MzI5MiwtNz
+Y4NzQ2MjQsNzcyNDYzNjM0LDU2NjkzNzU2LDI1OTQxMzc0NSwx
+NzQ2ODQwMzQsLTE2MDczMjY3MDEsMTkzMjQyOTQ4NSwtMTYwNz
+MyNjcwMSwxOTMyNDI5NDg1LC0xNjc2MTg2NTg5LDE4NTEwNjY4
+NTBdfQ==
 -->
