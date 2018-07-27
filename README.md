@@ -92,7 +92,7 @@ This issue is not only present with databases. We might need transactions, which
 	 - **Commander** - The service that coordinates the asynchronous transaction. It knows the instructions that need to be executed. It has to execute the remote calls to other services and once they are successful it needs to remove the events from its persistant event queue.
 	 - **Retries** - If an asynchronos event fails for whatever reason, the commander needs to retry it until it's completed. If the commander receives a successful response, but fails to remove the event from it's queue it needs to retry that too. If some other failure scenario happens the answer is retry.
 	 - **Idempotence** - This is the property of doing something twice and having the same result as if it was done only once. We need idempotence at the remote service or data source so that, in the cases where it receives the instruction more than once, it only processes it once.
- - Sagas
+ - Sagas - TODO
  - Two-phase commit (2PC) protocol - This approach can work in some cases, but is generally avoided as it has a few problems:
 	 - The 2PC coordinator is a single point of failure, which we want to avoid in microservices.
 	 - It's quite slow in a distributed system.
@@ -102,11 +102,11 @@ This issue is not only present with databases. We might need transactions, which
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NzI3NDcyMCwtMTUyMjUwOTk2NywxNj
-I5NjU5MTcxLC00NTk1MDMxNjEsMTEzNTcxMzM5OCwtMTc5MTIx
-Nzk3NiwtMTM5NjM1NzkwMywtMTM3NzE5Mzc5OSw5NjY1NDc0Mj
-IsMTA1MDg2Mzg2OCwtNzA2NjE3MDksLTE1OTg1NzY2MzgsNzM4
-MDE3Mjg4LDY3NzI2NDc4MCwtMjAxMTY4MzI5MiwtNzY4NzQ2Mj
-QsNzcyNDYzNjM0LDU2NjkzNzU2LDI1OTQxMzc0NSwxNzQ2ODQw
-MzRdfQ==
+eyJoaXN0b3J5IjpbLTE3Nzc0ODgwNywxMDU3Mjc0NzIwLC0xNT
+IyNTA5OTY3LDE2Mjk2NTkxNzEsLTQ1OTUwMzE2MSwxMTM1NzEz
+Mzk4LC0xNzkxMjE3OTc2LC0xMzk2MzU3OTAzLC0xMzc3MTkzNz
+k5LDk2NjU0NzQyMiwxMDUwODYzODY4LC03MDY2MTcwOSwtMTU5
+ODU3NjYzOCw3MzgwMTcyODgsNjc3MjY0NzgwLC0yMDExNjgzMj
+kyLC03Njg3NDYyNCw3NzI0NjM2MzQsNTY2OTM3NTYsMjU5NDEz
+NzQ1XX0=
 -->
