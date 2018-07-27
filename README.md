@@ -80,16 +80,16 @@ The 8 principles of microservices as defined by Sam Newman.
 ## Data consistency across services
 ### Problem
 One of the big data consistency problems in microservice systems comes from the fact that each microservice has its own data store, which means that given the following example system:
-```
-![Alt text](/img/acid-example-services.png?raw=true)
-```
+
+![Example](/img/acid-example-services.png?raw=true)
+
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNDE5OTY1NSwxNzQ2ODQwMzQsLTE2MD
-czMjY3MDEsMTkzMjQyOTQ4NSwtMTYwNzMyNjcwMSwxOTMyNDI5
-NDg1LC0xNjc2MTg2NTg5LDE4NTEwNjY4NTAsMTk0MjkxMzUzMS
-wtMjA0NjQ3NzcxMiwtMTgxNjQwODI4NiwxNTE1NDU0OTQzLDQ2
-MzY3ODQwOCwtMjA4Mjk0MzM5OCwxNzkwNjk2NDIxLC0xNjU2MT
-AzNjUwLDExNDEwMDU4MDYsNTEwMjUxNDY4LDE5MTQ4MDE0MTgs
-MTM0ODgwMDIyOV19
+eyJoaXN0b3J5IjpbMjU5NDEzNzQ1LDE3NDY4NDAzNCwtMTYwNz
+MyNjcwMSwxOTMyNDI5NDg1LC0xNjA3MzI2NzAxLDE5MzI0Mjk0
+ODUsLTE2NzYxODY1ODksMTg1MTA2Njg1MCwxOTQyOTEzNTMxLC
+0yMDQ2NDc3NzEyLC0xODE2NDA4Mjg2LDE1MTU0NTQ5NDMsNDYz
+Njc4NDA4LC0yMDgyOTQzMzk4LDE3OTA2OTY0MjEsLTE2NTYxMD
+M2NTAsMTE0MTAwNTgwNiw1MTAyNTE0NjgsMTkxNDgwMTQxOCwx
+MzQ4ODAwMjI5XX0=
 -->
