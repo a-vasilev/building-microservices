@@ -87,7 +87,7 @@ In this rather simple case we want the Customer and Order services to only talk 
 
 ### Possible solutions
 
- - The best solution is to design your microservices in such a way that you don't need **synchronous** distributed transactions across multiple services. After all microservices architecture aims to avoid any kind of dependency between services, so having to coordinate two or more services to commit or rollback data at the same time would couple them quite a bit.  
+ - The best solution is to design your microservices in such a way that you don't need **synchronous** distributed transactions across multiple services. After all microservices architecture aims to avoid any kind of dependency between services, so having to coordinate two or more services to commit or rollback data at the same time would couple them quite a bit. The way to avoid such transactions is by having one of the services be the "coordinator" of an asynchronous transaction. Meaning that if the Customer service from above   
  - Two-phase commit (2PC) protocol - This approach does work in some cases, but not all and it has a few problems:
 	 - The 2PC coordinator is a single point of failure, which we want to avoid in microservices.
 	 - Reduced throughput due to locks
@@ -97,11 +97,11 @@ In this rather simple case we want the Customer and Order services to only talk 
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMTYyMzY4OCw2NzcyNjQ3ODAsLTIwMT
-E2ODMyOTIsLTc2ODc0NjI0LDc3MjQ2MzYzNCw1NjY5Mzc1Niwy
-NTk0MTM3NDUsMTc0Njg0MDM0LC0xNjA3MzI2NzAxLDE5MzI0Mj
-k0ODUsLTE2MDczMjY3MDEsMTkzMjQyOTQ4NSwtMTY3NjE4NjU4
-OSwxODUxMDY2ODUwLDE5NDI5MTM1MzEsLTIwNDY0Nzc3MTIsLT
-E4MTY0MDgyODYsMTUxNTQ1NDk0Myw0NjM2Nzg0MDgsLTIwODI5
-NDMzOThdfQ==
+eyJoaXN0b3J5IjpbMjY4MjA2MTAwLDY3NzI2NDc4MCwtMjAxMT
+Y4MzI5MiwtNzY4NzQ2MjQsNzcyNDYzNjM0LDU2NjkzNzU2LDI1
+OTQxMzc0NSwxNzQ2ODQwMzQsLTE2MDczMjY3MDEsMTkzMjQyOT
+Q4NSwtMTYwNzMyNjcwMSwxOTMyNDI5NDg1LC0xNjc2MTg2NTg5
+LDE4NTEwNjY4NTAsMTk0MjkxMzUzMSwtMjA0NjQ3NzcxMiwtMT
+gxNjQwODI4NiwxNTE1NDU0OTQzLDQ2MzY3ODQwOCwtMjA4Mjk0
+MzM5OF19
 -->
