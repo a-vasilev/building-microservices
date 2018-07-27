@@ -78,10 +78,10 @@ The 8 principles of microservices as defined by Sam Newman.
  - Wikis with additional information or even stats.
 
 ## Data consistency across services
-
+### Problem
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY1MzEyMjY2LC0xNjA3MzI2NzAxLDE5Mz
+eyJoaXN0b3J5IjpbMTQzMjIzMDAyLC0xNjA3MzI2NzAxLDE5Mz
 I0Mjk0ODUsLTE2MDczMjY3MDEsMTkzMjQyOTQ4NSwtMTY3NjE4
 NjU4OSwxODUxMDY2ODUwLDE5NDI5MTM1MzEsLTIwNDY0Nzc3MT
 IsLTE4MTY0MDgyODYsMTUxNTQ1NDk0Myw0NjM2Nzg0MDgsLTIw
