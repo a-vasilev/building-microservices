@@ -88,7 +88,7 @@ This issue is not only present with databases. We might need transactions, which
 
 ### Possible solutions
 
- - The best solution is to design your microservices in such a way that you don't need **synchronous** distributed transactions across multiple services. After all microservices architecture aims to avoid any kind of dependency between services, so having to coordinate two or more services to commit or rollback data at the same time would couple them quite a bit. The way to avoid such transactions is by having one of the services be the "coordinator" of an asynchronous transaction. This means that one service would usually commit a normal transaction to its database, return a response and then start asynchronously calling other services to complete the whole transaction **eventually**.
+ - The best solution is to design your microservices in such a way that you don't need **synchronous** distributed transactions across multiple services. After all microservices architecture aims to avoid any kind of dependency between services, so having to coordinate two or more services to commit or rollback data at the same time would couple them quite a bit. The way to avoid such transactions is by having one of the services be the "coordinator" of an asynchronous transaction. **This means that every business event would result in a single synchronous transaction.** One service would usually commit a normal transaction to its database, return a response and then start asynchronously calling other services to complete the whole transaction **eventually**.
  - Two-phase commit (2PC) protocol - This approach does work in some cases, but not all and it has a few problems:
 	 - The 2PC coordinator is a single point of failure, which we want to avoid in microservices.
 	 - Reduced throughput due to locks
@@ -98,11 +98,11 @@ This issue is not only present with databases. We might need transactions, which
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY2NTQ3NDIyLDEwNTA4NjM4NjgsLTcwNj
-YxNzA5LC0xNTk4NTc2NjM4LDczODAxNzI4OCw2NzcyNjQ3ODAs
-LTIwMTE2ODMyOTIsLTc2ODc0NjI0LDc3MjQ2MzYzNCw1NjY5Mz
-c1NiwyNTk0MTM3NDUsMTc0Njg0MDM0LC0xNjA3MzI2NzAxLDE5
-MzI0Mjk0ODUsLTE2MDczMjY3MDEsMTkzMjQyOTQ4NSwtMTY3Nj
-E4NjU4OSwxODUxMDY2ODUwLDE5NDI5MTM1MzEsLTIwNDY0Nzc3
-MTJdfQ==
+eyJoaXN0b3J5IjpbLTE4ODQzNjg5NDgsOTY2NTQ3NDIyLDEwNT
+A4NjM4NjgsLTcwNjYxNzA5LC0xNTk4NTc2NjM4LDczODAxNzI4
+OCw2NzcyNjQ3ODAsLTIwMTE2ODMyOTIsLTc2ODc0NjI0LDc3Mj
+Q2MzYzNCw1NjY5Mzc1NiwyNTk0MTM3NDUsMTc0Njg0MDM0LC0x
+NjA3MzI2NzAxLDE5MzI0Mjk0ODUsLTE2MDczMjY3MDEsMTkzMj
+QyOTQ4NSwtMTY3NjE4NjU4OSwxODUxMDY2ODUwLDE5NDI5MTM1
+MzFdfQ==
 -->
