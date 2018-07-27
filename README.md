@@ -87,6 +87,7 @@ In this rather simple case we want the Customer and Order services to only talk 
 
 ### Possible solutions
 
+ - Define 
  - Two-phase commit (2PC) protocol - This approach does work in some cases, but not all and it has a few problems:
 	 - The 2PC coordinator is a single point of failure, which we want to avoid in microservices.
 	 - Reduced throughput due to locks
@@ -96,11 +97,11 @@ In this rather simple case we want the Customer and Order services to only talk 
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2ODc0NjI0LDc3MjQ2MzYzNCw1NjY5Mz
-c1NiwyNTk0MTM3NDUsMTc0Njg0MDM0LC0xNjA3MzI2NzAxLDE5
-MzI0Mjk0ODUsLTE2MDczMjY3MDEsMTkzMjQyOTQ4NSwtMTY3Nj
-E4NjU4OSwxODUxMDY2ODUwLDE5NDI5MTM1MzEsLTIwNDY0Nzc3
-MTIsLTE4MTY0MDgyODYsMTUxNTQ1NDk0Myw0NjM2Nzg0MDgsLT
-IwODI5NDMzOTgsMTc5MDY5NjQyMSwtMTY1NjEwMzY1MCwxMTQx
-MDA1ODA2XX0=
+eyJoaXN0b3J5IjpbLTIwMTE2ODMyOTIsLTc2ODc0NjI0LDc3Mj
+Q2MzYzNCw1NjY5Mzc1NiwyNTk0MTM3NDUsMTc0Njg0MDM0LC0x
+NjA3MzI2NzAxLDE5MzI0Mjk0ODUsLTE2MDczMjY3MDEsMTkzMj
+QyOTQ4NSwtMTY3NjE4NjU4OSwxODUxMDY2ODUwLDE5NDI5MTM1
+MzEsLTIwNDY0Nzc3MTIsLTE4MTY0MDgyODYsMTUxNTQ1NDk0My
+w0NjM2Nzg0MDgsLTIwODI5NDMzOTgsMTc5MDY5NjQyMSwtMTY1
+NjEwMzY1MF19
 -->
