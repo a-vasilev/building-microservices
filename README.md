@@ -95,15 +95,15 @@ This issue is not only present with databases. We might need transactions, which
 	 - Reduced throughput due to locks
 	 - Not supported by many NoSQL databases
 	 - Impacts availability
- - Saga
+ - Sagas
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNjYxNzA5LC0xNTk4NTc2NjM4LDczOD
-AxNzI4OCw2NzcyNjQ3ODAsLTIwMTE2ODMyOTIsLTc2ODc0NjI0
-LDc3MjQ2MzYzNCw1NjY5Mzc1NiwyNTk0MTM3NDUsMTc0Njg0MD
-M0LC0xNjA3MzI2NzAxLDE5MzI0Mjk0ODUsLTE2MDczMjY3MDEs
-MTkzMjQyOTQ4NSwtMTY3NjE4NjU4OSwxODUxMDY2ODUwLDE5ND
-I5MTM1MzEsLTIwNDY0Nzc3MTIsLTE4MTY0MDgyODYsMTUxNTQ1
-NDk0M119
+eyJoaXN0b3J5IjpbMTA1MDg2Mzg2OCwtNzA2NjE3MDksLTE1OT
+g1NzY2MzgsNzM4MDE3Mjg4LDY3NzI2NDc4MCwtMjAxMTY4MzI5
+MiwtNzY4NzQ2MjQsNzcyNDYzNjM0LDU2NjkzNzU2LDI1OTQxMz
+c0NSwxNzQ2ODQwMzQsLTE2MDczMjY3MDEsMTkzMjQyOTQ4NSwt
+MTYwNzMyNjcwMSwxOTMyNDI5NDg1LC0xNjc2MTg2NTg5LDE4NT
+EwNjY4NTAsMTk0MjkxMzUzMSwtMjA0NjQ3NzcxMiwtMTgxNjQw
+ODI4Nl19
 -->
