@@ -14,6 +14,7 @@ A lot of the information is aggregated from different sources, they can be found
 	 - [Decentralize everything](#decentralize-everything)
 	 - [Monitor everything](#monitor-everything)
 	 - [Consumer first](#consumer-first)
+ - [Data consistency across services](#data-consistency-across-services)
  - [Resources](#resources)
 
 ## What are microservices?
@@ -76,13 +77,15 @@ The 8 principles of microservices as defined by Sam Newman.
  - Swagger
  - Wikis with additional information or even stats.
 
+## Data consistency across services
+
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDczMjY3MDEsMTkzMjQyOTQ4NSwtMT
-YwNzMyNjcwMSwxOTMyNDI5NDg1LC0xNjc2MTg2NTg5LDE4NTEw
-NjY4NTAsMTk0MjkxMzUzMSwtMjA0NjQ3NzcxMiwtMTgxNjQwOD
-I4NiwxNTE1NDU0OTQzLDQ2MzY3ODQwOCwtMjA4Mjk0MzM5OCwx
-NzkwNjk2NDIxLC0xNjU2MTAzNjUwLDExNDEwMDU4MDYsNTEwMj
-UxNDY4LDE5MTQ4MDE0MTgsMTM0ODgwMDIyOSwtMTUwODU5OTMz
-Miw0MjIxMDI3NjddfQ==
+eyJoaXN0b3J5IjpbNTY1MzEyMjY2LC0xNjA3MzI2NzAxLDE5Mz
+I0Mjk0ODUsLTE2MDczMjY3MDEsMTkzMjQyOTQ4NSwtMTY3NjE4
+NjU4OSwxODUxMDY2ODUwLDE5NDI5MTM1MzEsLTIwNDY0Nzc3MT
+IsLTE4MTY0MDgyODYsMTUxNTQ1NDk0Myw0NjM2Nzg0MDgsLTIw
+ODI5NDMzOTgsMTc5MDY5NjQyMSwtMTY1NjEwMzY1MCwxMTQxMD
+A1ODA2LDUxMDI1MTQ2OCwxOTE0ODAxNDE4LDEzNDg4MDAyMjks
+LTE1MDg1OTkzMzJdfQ==
 -->
