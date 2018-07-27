@@ -84,7 +84,7 @@ One of the big data consistency problems in microservice systems comes from the 
 ![Example](/img/acid-example-services.PNG?raw=true)
 
 In this rather simple case we want the Customer and Order services to only talk to each other via their APIs, not through their databases. This means that we cannot have a classic ACID transaction that writes in both the Customer DB and the Order DB, so we have to somehow coordinate the two services to write something in their respective databases AND if one of them fails the other one has to rollback as well.
-This issue is not only present with databases. We might need transactions, which span across Messaging Queues AND Databases. Message brokers adding stuff to a queue is also a way of changing a data source.
+This issue is not only present with databases. We might need transactions, which span across Messaging Queues AND Databases. Message brokers adding events to a queue is also a way of changing a data source.
 
 ### Possible solutions
 - The best solution is to design your microservices in such a way that you don't need **synchronous** distributed transactions across multiple services. After all microservices architecture aims to avoid any kind of dependency between services, so having to coordinate two or more services to commit or rollback data at the same time would couple them quite a bit. In some cases we can try to avoid the need for cross service transactions, by making sure such business cases are encompased by a single microservice, so we need to have very well defined domain boundaries.
@@ -102,11 +102,11 @@ This issue is not only present with databases. We might need transactions, which
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg3OTY0MDUzLC0xNTIyNTA5OTY3LDE2Mj
-k2NTkxNzEsLTQ1OTUwMzE2MSwxMTM1NzEzMzk4LC0xNzkxMjE3
-OTc2LC0xMzk2MzU3OTAzLC0xMzc3MTkzNzk5LDk2NjU0NzQyMi
-wxMDUwODYzODY4LC03MDY2MTcwOSwtMTU5ODU3NjYzOCw3Mzgw
-MTcyODgsNjc3MjY0NzgwLC0yMDExNjgzMjkyLC03Njg3NDYyNC
-w3NzI0NjM2MzQsNTY2OTM3NTYsMjU5NDEzNzQ1LDE3NDY4NDAz
-NF19
+eyJoaXN0b3J5IjpbMTA1NzI3NDcyMCwtMTUyMjUwOTk2NywxNj
+I5NjU5MTcxLC00NTk1MDMxNjEsMTEzNTcxMzM5OCwtMTc5MTIx
+Nzk3NiwtMTM5NjM1NzkwMywtMTM3NzE5Mzc5OSw5NjY1NDc0Mj
+IsMTA1MDg2Mzg2OCwtNzA2NjE3MDksLTE1OTg1NzY2MzgsNzM4
+MDE3Mjg4LDY3NzI2NDc4MCwtMjAxMTY4MzI5MiwtNzY4NzQ2Mj
+QsNzcyNDYzNjM0LDU2NjkzNzU2LDI1OTQxMzc0NSwxNzQ2ODQw
+MzRdfQ==
 -->
