@@ -89,7 +89,7 @@ This issue is not only present with databases. We might need transactions, which
 
 ### Possible solutions
 
- - The best solution is to design your microservices in such a way that you don't need **synchronous** distributed transactions across multiple services. After all microservices architecture aims to avoid any kind of dependency between services, so having to coordinate two or more services to commit or rollback data at the same time would couple them quite a bit. The way to avoid such transactions is by having one of the services be the "coordinator" of an asynchronous transaction. Meaning that if the Customer service from above commits  
+ - The best solution is to design your microservices in such a way that you don't need **synchronous** distributed transactions across multiple services. After all microservices architecture aims to avoid any kind of dependency between services, so having to coordinate two or more services to commit or rollback data at the same time would couple them quite a bit. The way to avoid such transactions is by having one of the services be the "coordinator" of an asynchronous transaction. This means that one service would usually 
  - Two-phase commit (2PC) protocol - This approach does work in some cases, but not all and it has a few problems:
 	 - The 2PC coordinator is a single point of failure, which we want to avoid in microservices.
 	 - Reduced throughput due to locks
@@ -99,11 +99,11 @@ This issue is not only present with databases. We might need transactions, which
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM4MDE3Mjg4LDY3NzI2NDc4MCwtMjAxMT
-Y4MzI5MiwtNzY4NzQ2MjQsNzcyNDYzNjM0LDU2NjkzNzU2LDI1
-OTQxMzc0NSwxNzQ2ODQwMzQsLTE2MDczMjY3MDEsMTkzMjQyOT
-Q4NSwtMTYwNzMyNjcwMSwxOTMyNDI5NDg1LC0xNjc2MTg2NTg5
-LDE4NTEwNjY4NTAsMTk0MjkxMzUzMSwtMjA0NjQ3NzcxMiwtMT
-gxNjQwODI4NiwxNTE1NDU0OTQzLDQ2MzY3ODQwOCwtMjA4Mjk0
-MzM5OF19
+eyJoaXN0b3J5IjpbLTE1OTg1NzY2MzgsNzM4MDE3Mjg4LDY3Nz
+I2NDc4MCwtMjAxMTY4MzI5MiwtNzY4NzQ2MjQsNzcyNDYzNjM0
+LDU2NjkzNzU2LDI1OTQxMzc0NSwxNzQ2ODQwMzQsLTE2MDczMj
+Y3MDEsMTkzMjQyOTQ4NSwtMTYwNzMyNjcwMSwxOTMyNDI5NDg1
+LC0xNjc2MTg2NTg5LDE4NTEwNjY4NTAsMTk0MjkxMzUzMSwtMj
+A0NjQ3NzcxMiwtMTgxNjQwODI4NiwxNTE1NDU0OTQzLDQ2MzY3
+ODQwOF19
 -->
