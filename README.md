@@ -90,8 +90,8 @@ This issue is not only present with databases. We might need transactions, which
 
  - The best solution is to design your microservices in such a way that you don't need **synchronous** distributed transactions across multiple services. After all microservices architecture aims to avoid any kind of dependency between services, so having to coordinate two or more services to commit or rollback data at the same time would couple them quite a bit. The way to avoid such transactions is by having one of the services be the "coordinator" of an asynchronous transaction. **This means that every business event would result in a single synchronous transaction.** One service would usually commit a normal synchronous transaction to its database, return a response and then start asynchronously calling other services to complete the whole transaction **eventually**. If an asynchronous transaction fails it needs to be retried until successful. The pattern that should be used to achieve this is: **Commander, Retries and Idempotence**
 	 - **Commander** - The service that coordinates the asynchronous transaction. It knows the instructions that need to be executed. It has to execute the remote calls to other services and once they are successful it needs to remove the events from its persistant event queue.
-	 - **Retries** - If an asynchronos event fails for whatever reason, the commander needs to retry it until it's completed. If the commander receives a successful response, but fails to remove the event from it's queue it needs to retry that too. If some other failure scenario happens 
-	 - **Idempotence**
+	 - **Retries** - If an asynchronos event fails for whatever reason, the commander needs to retry it until it's completed. If the commander receives a successful response, but fails to remove the event from it's queue it needs to retry that too. If some other failure scenario happens the answer is retry.
+	 - **Idempotence** - 
  - In some cases we can try to avoid the need for cross service transactions, by making sure such business cases are encompased by a single microservice, so we need to have very well defined domain boundaries.
  - Sagas
  - Two-phase commit (2PC) protocol - This approach does work in some cases, but not all and it has a few problems:
@@ -102,11 +102,11 @@ This issue is not only present with databases. We might need transactions, which
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDMwODUxMywtNDU5NTAzMTYxLDExMz
-U3MTMzOTgsLTE3OTEyMTc5NzYsLTEzOTYzNTc5MDMsLTEzNzcx
-OTM3OTksOTY2NTQ3NDIyLDEwNTA4NjM4NjgsLTcwNjYxNzA5LC
-0xNTk4NTc2NjM4LDczODAxNzI4OCw2NzcyNjQ3ODAsLTIwMTE2
-ODMyOTIsLTc2ODc0NjI0LDc3MjQ2MzYzNCw1NjY5Mzc1NiwyNT
-k0MTM3NDUsMTc0Njg0MDM0LC0xNjA3MzI2NzAxLDE5MzI0Mjk0
-ODVdfQ==
+eyJoaXN0b3J5IjpbLTE5ODgyNzk2NDksLTQ1OTUwMzE2MSwxMT
+M1NzEzMzk4LC0xNzkxMjE3OTc2LC0xMzk2MzU3OTAzLC0xMzc3
+MTkzNzk5LDk2NjU0NzQyMiwxMDUwODYzODY4LC03MDY2MTcwOS
+wtMTU5ODU3NjYzOCw3MzgwMTcyODgsNjc3MjY0NzgwLC0yMDEx
+NjgzMjkyLC03Njg3NDYyNCw3NzI0NjM2MzQsNTY2OTM3NTYsMj
+U5NDEzNzQ1LDE3NDY4NDAzNCwtMTYwNzMyNjcwMSwxOTMyNDI5
+NDg1XX0=
 -->
