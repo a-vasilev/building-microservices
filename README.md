@@ -93,7 +93,7 @@ This issue is not only present with databases. We might need transactions, which
 	 - **Retries** - If an asynchronos event fails for whatever reason, the commander needs to retry it until it's completed. If the commander receives a successful response, but fails to remove the event from it's queue it needs to retry that too. If some other failure scenario happens the answer is retry.
 	 - **Idempotence** - This is the property of doing something twice and having the same result as if it was done only once. We need idempotence at the remote service or data source so that, in the cases where it receives the instruction more than once, it only processes it once.
  - Sagas
- - Two-phase commit (2PC) protocol - This approach can work in some cases, but is generally  all and it has a few problems:
+ - Two-phase commit (2PC) protocol - This approach can work in some cases, but is generally avoided as it has a few problems:
 	 - The 2PC coordinator is a single point of failure, which we want to avoid in microservices.
 	 - It's quite slow in a distributed system.
 	 - Reduced throughput due to locks
@@ -102,11 +102,11 @@ This issue is not only present with databases. We might need transactions, which
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTEyMjE0NzcsLTE1MjI1MDk5NjcsMT
-YyOTY1OTE3MSwtNDU5NTAzMTYxLDExMzU3MTMzOTgsLTE3OTEy
-MTc5NzYsLTEzOTYzNTc5MDMsLTEzNzcxOTM3OTksOTY2NTQ3ND
-IyLDEwNTA4NjM4NjgsLTcwNjYxNzA5LC0xNTk4NTc2NjM4LDcz
-ODAxNzI4OCw2NzcyNjQ3ODAsLTIwMTE2ODMyOTIsLTc2ODc0Nj
-I0LDc3MjQ2MzYzNCw1NjY5Mzc1NiwyNTk0MTM3NDUsMTc0Njg0
-MDM0XX0=
+eyJoaXN0b3J5IjpbNzg3OTY0MDUzLC0xNTIyNTA5OTY3LDE2Mj
+k2NTkxNzEsLTQ1OTUwMzE2MSwxMTM1NzEzMzk4LC0xNzkxMjE3
+OTc2LC0xMzk2MzU3OTAzLC0xMzc3MTkzNzk5LDk2NjU0NzQyMi
+wxMDUwODYzODY4LC03MDY2MTcwOSwtMTU5ODU3NjYzOCw3Mzgw
+MTcyODgsNjc3MjY0NzgwLC0yMDExNjgzMjkyLC03Njg3NDYyNC
+w3NzI0NjM2MzQsNTY2OTM3NTYsMjU5NDEzNzQ1LDE3NDY4NDAz
+NF19
 -->
