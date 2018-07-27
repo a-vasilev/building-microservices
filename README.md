@@ -88,15 +88,16 @@ In this rather simple case we want the Customer and Order services to only talk 
 ### Possible solutions
 
  - Two-phase commit (2PC) - This approach does work in some cases, but not all and it has a few problems:
-	 - The 2PC coordinator is a single point of failure, which we want to avoid in micr
+	 - The 2PC coordinator is a single point of failure, which we want to avoid in microservices.
+	 - 
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2MDI1NjY3MCw3NzI0NjM2MzQsNTY2OT
-M3NTYsMjU5NDEzNzQ1LDE3NDY4NDAzNCwtMTYwNzMyNjcwMSwx
-OTMyNDI5NDg1LC0xNjA3MzI2NzAxLDE5MzI0Mjk0ODUsLTE2Nz
-YxODY1ODksMTg1MTA2Njg1MCwxOTQyOTEzNTMxLC0yMDQ2NDc3
-NzEyLC0xODE2NDA4Mjg2LDE1MTU0NTQ5NDMsNDYzNjc4NDA4LC
-0yMDgyOTQzMzk4LDE3OTA2OTY0MjEsLTE2NTYxMDM2NTAsMTE0
-MTAwNTgwNl19
+eyJoaXN0b3J5IjpbLTE1MDc0MzE4NDQsNzcyNDYzNjM0LDU2Nj
+kzNzU2LDI1OTQxMzc0NSwxNzQ2ODQwMzQsLTE2MDczMjY3MDEs
+MTkzMjQyOTQ4NSwtMTYwNzMyNjcwMSwxOTMyNDI5NDg1LC0xNj
+c2MTg2NTg5LDE4NTEwNjY4NTAsMTk0MjkxMzUzMSwtMjA0NjQ3
+NzcxMiwtMTgxNjQwODI4NiwxNTE1NDU0OTQzLDQ2MzY3ODQwOC
+wtMjA4Mjk0MzM5OCwxNzkwNjk2NDIxLC0xNjU2MTAzNjUwLDEx
+NDEwMDU4MDZdfQ==
 -->
