@@ -83,9 +83,10 @@ One of the big data consistency problems in microservice systems comes from the 
 
 ![Example](/img/acid-example-services.PNG?raw=true)
 
+In this case we want the Customer and Order services to only talk to each 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDY3NTg4OTUsMjU5NDEzNzQ1LDE3ND
+eyJoaXN0b3J5IjpbLTEyMDczODEwOTMsMjU5NDEzNzQ1LDE3ND
 Y4NDAzNCwtMTYwNzMyNjcwMSwxOTMyNDI5NDg1LC0xNjA3MzI2
 NzAxLDE5MzI0Mjk0ODUsLTE2NzYxODY1ODksMTg1MTA2Njg1MC
 wxOTQyOTEzNTMxLC0yMDQ2NDc3NzEyLC0xODE2NDA4Mjg2LDE1
