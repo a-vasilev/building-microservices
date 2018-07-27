@@ -84,8 +84,7 @@ One of the big data consistency problems in microservice systems comes from the 
 ![Example](/img/acid-example-services.PNG?raw=true)
 
 In this rather simple case we want the Customer and Order services to only talk to each other via their APIs, not through their databases. This means that we cannot have a classic ACID transaction that writes in both the Customer DB and the Order DB, so we have to somehow coordinate the two services to write something in their respective databases AND if one of them fails the other one has to rollback as well.
-
-This issue is not only present with databases. We might need transactions, which span across Messaging Queues AND Databases.
+This issue is not only present with databases. We might need transactions, which span across Messaging Queues AND Databases. Message brokers adding stuff to a queue is also a way of changing a data source.
 
 ### Possible solutions
 
@@ -99,11 +98,11 @@ This issue is not only present with databases. We might need transactions, which
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MDg2Mzg2OCwtNzA2NjE3MDksLTE1OT
-g1NzY2MzgsNzM4MDE3Mjg4LDY3NzI2NDc4MCwtMjAxMTY4MzI5
-MiwtNzY4NzQ2MjQsNzcyNDYzNjM0LDU2NjkzNzU2LDI1OTQxMz
-c0NSwxNzQ2ODQwMzQsLTE2MDczMjY3MDEsMTkzMjQyOTQ4NSwt
-MTYwNzMyNjcwMSwxOTMyNDI5NDg1LC0xNjc2MTg2NTg5LDE4NT
-EwNjY4NTAsMTk0MjkxMzUzMSwtMjA0NjQ3NzcxMiwtMTgxNjQw
-ODI4Nl19
+eyJoaXN0b3J5IjpbOTY2NTQ3NDIyLDEwNTA4NjM4NjgsLTcwNj
+YxNzA5LC0xNTk4NTc2NjM4LDczODAxNzI4OCw2NzcyNjQ3ODAs
+LTIwMTE2ODMyOTIsLTc2ODc0NjI0LDc3MjQ2MzYzNCw1NjY5Mz
+c1NiwyNTk0MTM3NDUsMTc0Njg0MDM0LC0xNjA3MzI2NzAxLDE5
+MzI0Mjk0ODUsLTE2MDczMjY3MDEsMTkzMjQyOTQ4NSwtMTY3Nj
+E4NjU4OSwxODUxMDY2ODUwLDE5NDI5MTM1MzEsLTIwNDY0Nzc3
+MTJdfQ==
 -->
