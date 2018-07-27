@@ -84,16 +84,17 @@ One of the big data consistency problems in microservice systems comes from the 
 ![Example](/img/acid-example-services.PNG?raw=true)
 
 In this rather simple case we want the Customer and Order services to only talk to each other via their APIs, not through their databases. This means that we cannot have a classic ACID transaction that writes in both the Customer DB and the Order DB, so we have to somehow coordinate the two services to write something in their respective databases AND if one of them fails the other one has to rollback as well.
+
 ### Possible solutions
-#### Two-phase commit (2PC
+ - **Two-phase commit (2PC)** -
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNzg4MTQwMyw1NjY5Mzc1NiwyNTk0MT
-M3NDUsMTc0Njg0MDM0LC0xNjA3MzI2NzAxLDE5MzI0Mjk0ODUs
-LTE2MDczMjY3MDEsMTkzMjQyOTQ4NSwtMTY3NjE4NjU4OSwxOD
-UxMDY2ODUwLDE5NDI5MTM1MzEsLTIwNDY0Nzc3MTIsLTE4MTY0
-MDgyODYsMTUxNTQ1NDk0Myw0NjM2Nzg0MDgsLTIwODI5NDMzOT
-gsMTc5MDY5NjQyMSwtMTY1NjEwMzY1MCwxMTQxMDA1ODA2LDUx
-MDI1MTQ2OF19
+eyJoaXN0b3J5IjpbMTM1NjM4NzA0LDU2NjkzNzU2LDI1OTQxMz
+c0NSwxNzQ2ODQwMzQsLTE2MDczMjY3MDEsMTkzMjQyOTQ4NSwt
+MTYwNzMyNjcwMSwxOTMyNDI5NDg1LC0xNjc2MTg2NTg5LDE4NT
+EwNjY4NTAsMTk0MjkxMzUzMSwtMjA0NjQ3NzcxMiwtMTgxNjQw
+ODI4NiwxNTE1NDU0OTQzLDQ2MzY3ODQwOCwtMjA4Mjk0MzM5OC
+wxNzkwNjk2NDIxLC0xNjU2MTAzNjUwLDExNDEwMDU4MDYsNTEw
+MjUxNDY4XX0=
 -->
