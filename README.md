@@ -83,14 +83,14 @@ One of the big data consistency problems in microservice systems comes from the 
 
 ![Example](/img/acid-example-services.PNG?raw=true)
 
-In this case we want the Customer and Order services to only talk to each other via their APIs, not through their databases. This means that if we want to have an ACID transaction that needs to write in both the Customer DB and the Order DB then we have to somehow coordinate the two servic
+In this case we want the Customer and Order services to only talk to each other via their APIs, not through their databases. This means that if we want to have an ACID transaction that needs to write in both the Customer DB and the Order DB.
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ3OTk1MzI5LDI1OTQxMzc0NSwxNzQ2OD
-QwMzQsLTE2MDczMjY3MDEsMTkzMjQyOTQ4NSwtMTYwNzMyNjcw
-MSwxOTMyNDI5NDg1LC0xNjc2MTg2NTg5LDE4NTEwNjY4NTAsMT
-k0MjkxMzUzMSwtMjA0NjQ3NzcxMiwtMTgxNjQwODI4NiwxNTE1
-NDU0OTQzLDQ2MzY3ODQwOCwtMjA4Mjk0MzM5OCwxNzkwNjk2ND
-IxLC0xNjU2MTAzNjUwLDExNDEwMDU4MDYsNTEwMjUxNDY4LDE5
-MTQ4MDE0MThdfQ==
+eyJoaXN0b3J5IjpbNTY2OTM3NTYsMjU5NDEzNzQ1LDE3NDY4ND
+AzNCwtMTYwNzMyNjcwMSwxOTMyNDI5NDg1LC0xNjA3MzI2NzAx
+LDE5MzI0Mjk0ODUsLTE2NzYxODY1ODksMTg1MTA2Njg1MCwxOT
+QyOTEzNTMxLC0yMDQ2NDc3NzEyLC0xODE2NDA4Mjg2LDE1MTU0
+NTQ5NDMsNDYzNjc4NDA4LC0yMDgyOTQzMzk4LDE3OTA2OTY0Mj
+EsLTE2NTYxMDM2NTAsMTE0MTAwNTgwNiw1MTAyNTE0NjgsMTkx
+NDgwMTQxOF19
 -->
