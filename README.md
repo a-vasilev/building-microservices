@@ -89,7 +89,7 @@ This issue is not only present with databases. We might need transactions, which
 
 ### Possible solutions
 
- - The best solution is to design your microservices in such a way that you don't need **synchronous** distributed transactions across multiple services. After all microservices architecture aims to avoid any kind of dependency between services, so having to coordinate two or more services to commit or rollback data at the same time would couple them quite a bit. The way to avoid such transactions is by having one of the services be the "coordinator" of an asynchronous transaction. This means that one service would usually 
+ - The best solution is to design your microservices in such a way that you don't need **synchronous** distributed transactions across multiple services. After all microservices architecture aims to avoid any kind of dependency between services, so having to coordinate two or more services to commit or rollback data at the same time would couple them quite a bit. The way to avoid such transactions is by having one of the services be the "coordinator" of an asynchronous transaction. This means that one service would usually commit a normal transaction to its database, return a response and then start asynchronously tr
  - Two-phase commit (2PC) protocol - This approach does work in some cases, but not all and it has a few problems:
 	 - The 2PC coordinator is a single point of failure, which we want to avoid in microservices.
 	 - Reduced throughput due to locks
@@ -99,11 +99,11 @@ This issue is not only present with databases. We might need transactions, which
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTg1NzY2MzgsNzM4MDE3Mjg4LDY3Nz
-I2NDc4MCwtMjAxMTY4MzI5MiwtNzY4NzQ2MjQsNzcyNDYzNjM0
-LDU2NjkzNzU2LDI1OTQxMzc0NSwxNzQ2ODQwMzQsLTE2MDczMj
-Y3MDEsMTkzMjQyOTQ4NSwtMTYwNzMyNjcwMSwxOTMyNDI5NDg1
-LC0xNjc2MTg2NTg5LDE4NTEwNjY4NTAsMTk0MjkxMzUzMSwtMj
-A0NjQ3NzcxMiwtMTgxNjQwODI4NiwxNTE1NDU0OTQzLDQ2MzY3
-ODQwOF19
+eyJoaXN0b3J5IjpbLTI1MTU4MjY0OCwtMTU5ODU3NjYzOCw3Mz
+gwMTcyODgsNjc3MjY0NzgwLC0yMDExNjgzMjkyLC03Njg3NDYy
+NCw3NzI0NjM2MzQsNTY2OTM3NTYsMjU5NDEzNzQ1LDE3NDY4ND
+AzNCwtMTYwNzMyNjcwMSwxOTMyNDI5NDg1LC0xNjA3MzI2NzAx
+LDE5MzI0Mjk0ODUsLTE2NzYxODY1ODksMTg1MTA2Njg1MCwxOT
+QyOTEzNTMxLC0yMDQ2NDc3NzEyLC0xODE2NDA4Mjg2LDE1MTU0
+NTQ5NDNdfQ==
 -->
