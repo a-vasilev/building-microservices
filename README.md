@@ -85,9 +85,11 @@ One of the big data consistency problems in microservice systems comes from the 
 
 In this rather simple case we want the Customer and Order services to only talk to each other via their APIs, not through their databases. This means that we cannot have a classic ACID transaction that writes in both the Customer DB and the Order DB, so we have to somehow coordinate the two services to write something in their respective databases AND if one of them fails the other one has to rollback as well.
 
+This issue is not only present with databases. We might need transactions, which span across Messaging Queues AND Databases.
+
 ### Possible solutions
 
- - The best solution is to design your microservices in such a way that you don't need **synchronous** distributed transactions across multiple services. After all microservices architecture aims to avoid any kind of dependency between services, so having to coordinate two or more services to commit or rollback data at the same time would couple them quite a bit. The way to avoid such transactions is by having one of the services be the "coordinator" of an asynchronous transaction. Meaning that if the Customer service from above   
+ - The best solution is to design your microservices in such a way that you don't need **synchronous** distributed transactions across multiple services. After all microservices architecture aims to avoid any kind of dependency between services, so having to coordinate two or more services to commit or rollback data at the same time would couple them quite a bit. The way to avoid such transactions is by having one of the services be the "coordinator" of an asynchronous transaction. Meaning that if the Customer service from above commits  
  - Two-phase commit (2PC) protocol - This approach does work in some cases, but not all and it has a few problems:
 	 - The 2PC coordinator is a single point of failure, which we want to avoid in microservices.
 	 - Reduced throughput due to locks
@@ -97,7 +99,7 @@ In this rather simple case we want the Customer and Order services to only talk 
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY4MjA2MTAwLDY3NzI2NDc4MCwtMjAxMT
+eyJoaXN0b3J5IjpbNzM4MDE3Mjg4LDY3NzI2NDc4MCwtMjAxMT
 Y4MzI5MiwtNzY4NzQ2MjQsNzcyNDYzNjM0LDU2NjkzNzU2LDI1
 OTQxMzc0NSwxNzQ2ODQwMzQsLTE2MDczMjY3MDEsMTkzMjQyOT
 Q4NSwtMTYwNzMyNjcwMSwxOTMyNDI5NDg1LC0xNjc2MTg2NTg5
