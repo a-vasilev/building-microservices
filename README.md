@@ -87,7 +87,7 @@ In this rather simple case we want the Customer and Order services to only talk 
 
 ### Possible solutions
 
- - Define 
+ - The best solution is to design your microservices in such a way that you don't need distributed transactions across multiple services. After all microservices architecture aims to avoid any kind of dependen
  - Two-phase commit (2PC) protocol - This approach does work in some cases, but not all and it has a few problems:
 	 - The 2PC coordinator is a single point of failure, which we want to avoid in microservices.
 	 - Reduced throughput due to locks
@@ -97,11 +97,11 @@ In this rather simple case we want the Customer and Order services to only talk 
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTE2ODMyOTIsLTc2ODc0NjI0LDc3Mj
-Q2MzYzNCw1NjY5Mzc1NiwyNTk0MTM3NDUsMTc0Njg0MDM0LC0x
-NjA3MzI2NzAxLDE5MzI0Mjk0ODUsLTE2MDczMjY3MDEsMTkzMj
-QyOTQ4NSwtMTY3NjE4NjU4OSwxODUxMDY2ODUwLDE5NDI5MTM1
-MzEsLTIwNDY0Nzc3MTIsLTE4MTY0MDgyODYsMTUxNTQ1NDk0My
-w0NjM2Nzg0MDgsLTIwODI5NDMzOTgsMTc5MDY5NjQyMSwtMTY1
-NjEwMzY1MF19
+eyJoaXN0b3J5IjpbMTM3MTA2NTgwLC0yMDExNjgzMjkyLC03Nj
+g3NDYyNCw3NzI0NjM2MzQsNTY2OTM3NTYsMjU5NDEzNzQ1LDE3
+NDY4NDAzNCwtMTYwNzMyNjcwMSwxOTMyNDI5NDg1LC0xNjA3Mz
+I2NzAxLDE5MzI0Mjk0ODUsLTE2NzYxODY1ODksMTg1MTA2Njg1
+MCwxOTQyOTEzNTMxLC0yMDQ2NDc3NzEyLC0xODE2NDA4Mjg2LD
+E1MTU0NTQ5NDMsNDYzNjc4NDA4LC0yMDgyOTQzMzk4LDE3OTA2
+OTY0MjFdfQ==
 -->
