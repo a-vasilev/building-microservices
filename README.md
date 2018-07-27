@@ -87,8 +87,8 @@ In this rather simple case we want the Customer and Order services to only talk 
 This issue is not only present with databases. We might need transactions, which span across Messaging Queues AND Databases. Message brokers adding stuff to a queue is also a way of changing a data source.
 
 ### Possible solutions
-- In some cases we can try to avoid the need for cross service transactions, by making sure such business cases are encompased by a single microservice, so we need to have very well defined domain boundaries.
- - The best solution is to design your microservices in such a way that you don't need **synchronous** distributed transactions across multiple services. After all microservices architecture aims to avoid any kind of dependency between services, so having to coordinate two or more services to commit or rollback data at the same time would couple them quite a bit. The way to avoid such transactions is by having one of the services be the "coordinator" of an asynchronous transaction. **This means that every business event would result in a single synchronous transaction.** One service would usually commit a normal synchronous transaction to its database, return a response and then start asynchronously calling other services to complete the whole transaction **eventually**. If an asynchronous transaction fails it needs to be retried until successful. The pattern that should be used to achieve this is: **Commander, Retries and Idempotence**
+- The best solution is to design your microservices in such a way that you don't need **synchronous** distributed transactions across multiple services. After all microservices architecture aims to avoid any kind of dependency between services, so having to coordinate two or more services to commit or rollback data at the same time would couple them quite a bit. In some cases we can try to avoid the need for cross service transactions, by making sure such business cases are encompased by a single microservice, so we need to have very well defined domain boundaries.
+ - If we have to do transactions The way to avoid such transactions is by having one of the services be the "coordinator" of an asynchronous transaction. **This means that every business event would result in a single synchronous transaction.** One service would usually commit a normal synchronous transaction to its database, return a response and then start asynchronously calling other services to complete the whole transaction and achieve consistency **eventually**. If an asynchronous transaction fails it needs to be retried until successful. The pattern that should be used to achieve this is: **Commander, Retries and Idempotence**
 	 - **Commander** - The service that coordinates the asynchronous transaction. It knows the instructions that need to be executed. It has to execute the remote calls to other services and once they are successful it needs to remove the events from its persistant event queue.
 	 - **Retries** - If an asynchronos event fails for whatever reason, the commander needs to retry it until it's completed. If the commander receives a successful response, but fails to remove the event from it's queue it needs to retry that too. If some other failure scenario happens the answer is retry.
 	 - **Idempotence** - This is the property of doing something twice and having the same result as if it was done only once. We need idempotence at the remote service or data source so that, in the cases where it receives the instruction more than once, it only processes it once.
@@ -101,11 +101,11 @@ This issue is not only present with databases. We might need transactions, which
 
 ## Resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyOTY1OTE3MSwtNDU5NTAzMTYxLDExMz
-U3MTMzOTgsLTE3OTEyMTc5NzYsLTEzOTYzNTc5MDMsLTEzNzcx
-OTM3OTksOTY2NTQ3NDIyLDEwNTA4NjM4NjgsLTcwNjYxNzA5LC
-0xNTk4NTc2NjM4LDczODAxNzI4OCw2NzcyNjQ3ODAsLTIwMTE2
-ODMyOTIsLTc2ODc0NjI0LDc3MjQ2MzYzNCw1NjY5Mzc1NiwyNT
-k0MTM3NDUsMTc0Njg0MDM0LC0xNjA3MzI2NzAxLDE5MzI0Mjk0
-ODVdfQ==
+eyJoaXN0b3J5IjpbMTI5NjcyMzc3LDE2Mjk2NTkxNzEsLTQ1OT
+UwMzE2MSwxMTM1NzEzMzk4LC0xNzkxMjE3OTc2LC0xMzk2MzU3
+OTAzLC0xMzc3MTkzNzk5LDk2NjU0NzQyMiwxMDUwODYzODY4LC
+03MDY2MTcwOSwtMTU5ODU3NjYzOCw3MzgwMTcyODgsNjc3MjY0
+NzgwLC0yMDExNjgzMjkyLC03Njg3NDYyNCw3NzI0NjM2MzQsNT
+Y2OTM3NTYsMjU5NDEzNzQ1LDE3NDY4NDAzNCwtMTYwNzMyNjcw
+MV19
 -->
